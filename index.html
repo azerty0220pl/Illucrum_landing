@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="./images/illucrum_icon.png">
+    <title>Illucrum LLC</title>
+    <meta name="description" value="Software develpment solutions that work like magic" />
+    <meta name="keywords" value="Software development, IT, nearshoring, nearshore, Java, web development, fullstack, frontend, backend, freelance, html, css, javascript, intershop, salesforce, e-commerce" />
+    <meta name="author" value="Szymon Kokot" />
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="canonical" href="illucrum.com" />
+</head>
+<body>
+    <header>
+        <div class="upper-header">
+            <img src="./images/illucrum_logo.png" alt="Illucrum's logo" width="300" height="80" loading="lazy" />
+            <a href="mailto:szymon.kokot@illucrum.com">szymon.kokot@illucrum.com</a>
+        </div>
+        <div class="middle-header">
+            <h1>Illucrum LLC</h1>
+            <p>Software development solutions that work like magic</p>
+        </div>
+        <div class="lower-header">
+            <p>Comfortable with the best technologies:</p>
+            <div>
+                <img src="./images/technologies/docker.png" alt="docker" width="50" height="50" loading="lazy" />
+                <img src="./images/technologies/python.png" alt="python" width="50" height="50" loading="lazy" />
+                <img src="./images/technologies/aws.png" alt="aws" width="50" height="50" loading="lazy" />
+                <img src="./images/technologies/react.png" alt="react" width="50" height="50" loading="lazy" />
+                <img src="./images/technologies/intershop.png" alt="intershop" width="50" height="50" loading="lazy" />
+                <img src="./images/technologies/spring.png" alt="spring" width="50" height="50" loading="lazy" />
+                <img src="./images/technologies/java.png" alt="java" width="50" height="50" loading="lazy" />
+                <img src="./images/technologies/angular.png" alt="angular" width="50" height="50" loading="lazy" />
+                <img src="./images/technologies/salesforce.png" alt="salesforce" width="50" height="50" loading="lazy" />
+                <img src="./images/technologies/git.png" alt="git" width="50" height="50" loading="lazy" />
+                <img src="./images/technologies/azure.png" alt="azure" width="50" height="50" loading="lazy" />
+                <img src="./images/technologies/php.png" alt="php" width="50" height="50" loading="lazy" />
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div>
+                <h2>Best IT solutions in a flick of a wand</h2>
+                <p>The name Illucrum blends illusio (illusion) and lucrum (profit), which is how software projects tend to go: a little magic, sometimes a little chaos, but always a happy ending. And all this good stuff, we do it for a living.</p>
+                <p>We believe that well-crafted software should feel seamless, even when the architecture behind it is anything but that. From backend integrations to user-facing platforms, at Illucrum we build reliable tech that looks effortless — like any good trick should.</p>
+            </div>
+            <img src="./images/side/side-1.jpg" alt="Some decoration photo" />
+        </section>
+        <section class="superquote">
+            <figure class="super-quote-figure">
+                <blockquote class="super-quote-blockquote">
+                    <p class="super-quote-p super-quote-p-1" id="superquote_1">
+                        Code is poetry
+                    </p>
+                    <p class="super-quote-p super-quote-p-2" id="superquote_2">
+                        write it with us
+                    </p>
+                </blockquote>
+            </figure>
+            <script>
+                let superquote_1 = document.getElementById('superquote_1');
+                let superquote_2 = document.getElementById('superquote_2');
+
+                document.addEventListener("scroll", () => {
+                    let height = document.documentElement.clientHeight;
+
+                    let bottom = superquote_1.getBoundingClientRect().bottom;
+
+                    if(bottom < 0) {
+                        bottom = 0;
+                    } else if(bottom > height) {
+                        bottom = height;
+                    }
+
+                    let percentage = Math.round(((height - bottom) / height) * 100) * 4;
+
+                    let computedPercentage_1 = window.getComputedStyle(superquote_1).getPropertyValue('--percentage_1_2').replace("%", "");
+                    let computedPercentage_2 = window.getComputedStyle(superquote_2).getPropertyValue('--percentage_2_2').replace("%", "");
+                    let speed_1 = Math.min( Math.abs(computedPercentage_1 - Math.min(Math.max(percentage, 0), 100)) / 100, 1);
+                    let speed_2 = Math.min( Math.abs(computedPercentage_2 - Math.min(Math.max(percentage - 80, 0), 100)) / 100, 1);
+
+                    let val1 = Math.min(Math.max(percentage - 5, 0), 100);
+                    let val2 = Math.min(Math.max(percentage, 0), 100);
+                    let val3 = Math.min(Math.max(percentage - 85, 0), 100);
+                    let val4 = Math.min(Math.max(percentage - 80, 0), 100);
+
+                    superquote_1.style.setProperty('--percentage_1_1', `${val1}%`);
+                    superquote_1.style.setProperty('--percentage_1_2', `${val2}%`);
+                    superquote_1.style.setProperty('--transition-speed', `${speed_1}s`);
+                    superquote_2.style.setProperty('--percentage_2_1', `${val3}%`);
+                    superquote_2.style.setProperty('--percentage_2_2', `${val4}%`);
+                    superquote_2.style.setProperty('--transition-speed', `${speed_2}s`);
+                });
+            </script>
+        </section>
+        <section>
+            <img src="./images/side/side-2.jpg" alt="Some decoration photo" />
+            <div>
+                <h2>Why choose us</h2>
+                <ul>
+                    <li><img src="./images/icons/code-solid.svg" alt="code icon" width="50" height="50" loading="lazy" /> <p>When a developer that says he can’t do something, he is admitting that he’s bad. That’s not our case…</p></li>
+                    <li><img src="./images/icons/meteor-solid.svg" alt="meteor icon" width="50" height="50" loading="lazy" /> <p>At Illucrum we believe working too slow is too boring</p></li>
+                    <li><img src="./images/icons/file-contract-solid.svg" alt="contract icon" width="50" height="50" loading="lazy" /> <p>Clear communication, straight forward negotiations, no time wasted from the beginning</p></li>
+                    <li><img src="./images/icons/money-bills-solid.svg" alt="bills icon" width="50" height="50" loading="lazy" /> <p>Save not only time, but also money.</p></li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <blockquote>
+                <em>„Programming is the art of skillful lying”</em>
+                <cite>Szymon Kokot, programmer and founder of Illucrum</cite>
+            </blockquote>
+        </section>
+        <section>
+            <div>
+                <p>I started a degree in Computer Science at the Polytechnic University of Madrid. I left the university without completing my studies as I saw them as a waste of time. Always looking for new challenges, I started an intership at Oxygen after which I would land my first job at Sugerendo as a Fullstack Developer. Sugerendo is a small consulting company specialised in e-commerce, where I quickly learned and put to an use a variety of skills. During my adventure there, I worked for two different clients. For one as a part of a small team, for the other I faced the challenge by myself. But being a simple job with a good contract not enough of a challenge, I started Illucrum LLC with the aim of deliverying the best IT solutions with the best delivery times.</p>
+            </div>
+        <img src="./images/side/side-3.jpg" alt="Some decoration photo" />
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 Illucrum LLC. All rights reserved. <a href="privacy-policy.html">Privacy Policy</a></p>
+    </footer>
+</body>
+</html>

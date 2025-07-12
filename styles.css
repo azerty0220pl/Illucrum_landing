@@ -1,0 +1,280 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'PT Sans';
+    src: url("./PTSans-Regular.ttf");
+    font-weight: normal;
+}
+
+body {
+    min-width: 1450px;
+    font-family: 'PT Sans';
+}
+
+header {
+    height: 100vh;
+    width: 100%;
+    background-image: url("./images/background.jpg");
+    background-size: 100% auto;
+}
+
+header .upper-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5rem 10rem;
+}
+
+header .upper-header img {
+    height: 5rem;
+}
+
+header .upper-header a {
+    text-align: center;
+    height: 1rem;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+header .upper-header a:hover {
+    color: aqua;
+}
+
+header .middle-header {
+    margin-top: 30vh;
+}
+
+header .middle-header h1 {
+    color: #01ba67;
+    text-align: center;
+}
+
+header .middle-header p {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+header .lower-header {
+    margin-top: 25vh;
+}
+
+header .lower-header p {
+    text-align: center;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+header .lower-header div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.privacy header {
+    height: auto;
+    width: 100%;
+    background-image: url("./images/background.jpg");
+    background-size: 100% auto;
+}
+
+.privacy header .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5rem 10rem;
+}
+
+.privacy header .header img {
+    height: 5rem;
+}
+
+.privacy header .header a {
+    text-align: center;
+    height: fit-content;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.privacy header .header a:hover {
+    color: aqua;
+}
+
+.privacy header .header h1 {
+    color: #01ba67;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+section img {
+    width: 33%;
+}
+
+section div {
+    width: 67%;
+}
+
+section div h2 {
+    width: 75%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+section div p {
+    width: 75%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+section ul {
+    margin-left: 2rem;
+}
+
+section ul li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 1rem;
+}
+
+section ul li img {
+    width: 40px;
+    height: 40px;
+}
+
+section ul li p {
+    text-align: left;
+    margin: 0;
+    margin-left: 2rem;
+}
+
+section figure {
+    width: 100%;
+}
+
+.superquote {
+    background-color: #01ba67;
+}
+
+@property --percentage_1_1 {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 0%;
+}
+@property --percentage_1_2 {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 0%;
+}
+@property --percentage_2_1 {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 0%;
+}
+@property --percentage_2_2 {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 0%;
+}
+@property --transition-speed {
+  syntax: "<time>";
+  inherits: false;
+  initial-value: 0s;
+}
+.super-quote-blockquote {
+  position: relative;
+  display: block;
+  margin: 1rem auto;
+  width: 100%;
+  padding: 4rem 1rem;
+}
+
+.super-quote-p {
+  font-size: 5rem;
+  line-height: 1.5;
+  text-align: center;
+  font-weight: bolder;
+  color: #fff;
+  -webkit-mask-clip: text;
+  mask-clip: text;
+  -webkit-mask-composite: exclude;
+  mask-composite: exclude;
+}
+
+.super-quote-p-1 {
+  transition: --percentage_1_1 ease-out var(--transition-speed) 0s, --percentage_1_2 ease-out var(--transition-speed) 0s;
+  -webkit-mask-image: linear-gradient(to right, white var(--percentage_1_1), rgba(196, 45, 45, 0.0666666667) var(--percentage_1_2));
+  mask-image: linear-gradient(to right, white var(--percentage_1_1), rgba(196, 45, 45, 0.0666666667) var(--percentage_1_2));
+}
+
+.super-quote-p-2 {
+  transition: --percentage_2_1 ease-out var(--transition-speed), --percentage_2_2 ease-out var(--transition-speed);
+  -webkit-mask-image: linear-gradient(to right, white var(--percentage_2_1), rgba(9, 35, 78, 0.0666666667) var(--percentage_2_2));
+  mask-image: linear-gradient(to right, white var(--percentage_2_1), rgba(9, 35, 78, 0.0666666667) var(--percentage_2_2));
+}
+
+section blockquote {
+    background-color: #01ba67;
+    padding: 5rem;
+    width: 100%;
+    color: white;
+}
+
+section blockquote em {
+    display: block;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+section blockquote cite {
+    display: block;
+    text-align: center;
+}
+
+footer {
+    background-color: #01ba67;
+    padding: 2rem;
+    color: white;
+    text-align: center;
+}
+
+footer a {
+    color: aqua;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: white;
+}
+
+.privacy main {
+    margin: 5rem 10rem;
+}
+
+.privacy main h2 {
+    margin-bottom: 1rem;
+}
+
+.privacy main h3 {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
