@@ -182,6 +182,33 @@ section figure {
     background-color: #01ba67;
 }
 
+.clients {
+    display: block;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    background-color: #4cc08c;
+}
+
+.clients h2 {
+    display: block;
+    width: fit-content;
+    margin: auto;
+    color: white;
+}
+
+.clients .images-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.clients .images-row img {
+    height: 50px;
+    width: auto;
+}
+
 @property --percentage_1_1 {
   syntax: "<percentage>";
   inherits: false;
