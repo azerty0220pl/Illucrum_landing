@@ -1,3 +1,9 @@
+:root {
+  --color-primary: #01ba67;
+  --color-secondary: #fff;
+  --color-tertiary: #26e28e;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -61,7 +67,7 @@ header .middle-header {
 }
 
 header .middle-header h1 {
-  color: #01ba67;
+  color: var(--color-primary);
   text-align: center;
 }
 
@@ -121,7 +127,7 @@ header .lower-header div {
 }
 
 .privacy header .header h1 {
-  color: #01ba67;
+  color: var(--color-primary);
 }
 
 section {
@@ -179,14 +185,14 @@ section figure {
 }
 
 .superquote {
-  background-color: #01ba67;
+  background-color: var(--color-primary);
 }
 
 .clients {
   display: block;
   padding-top: 4rem;
   padding-bottom: 4rem;
-  background-color: #26e28e;
+  background-color: var(--color-tertiary);
 }
 
 .clients h2 {
@@ -285,7 +291,7 @@ section figure {
 }
 
 section blockquote {
-  background-color: #01ba67;
+  background-color: var(--color-primary);
   padding: 5rem;
   width: 100%;
   color: white;
@@ -305,7 +311,7 @@ section blockquote cite {
 }
 
 footer {
-  background-color: #01ba67;
+  background-color: var(--color-primary);
   padding: 2rem;
   color: white;
   text-align: center;
@@ -343,15 +349,16 @@ footer a:hover {
   margin: auto;
   margin-top: 2rem;
   border-radius: 10px;
-  background-color: #01ba67;
+  background-color: var(--color-primary);
 }
 
 .button:hover {
-  background-color: #26e28e;
+  background-color: var(--color-tertiary);
 }
 
 .why-us {
   display: block;
+  padding-top: 10rem;
 }
 
 .why-us h2 {
@@ -384,7 +391,7 @@ footer a:hover {
 }
 
 .reverse {
-  background-color: #01ba67;
+  background-color: var(--color-primary);
   color: white;
 }
 
@@ -419,13 +426,13 @@ footer a:hover {
   width: 25%;
   list-style: none;
   padding-left: 4rem;
-  background-color: #01ba67;
+  background-color: var(--color-primary);
   color: white;
   font-weight: bold;
 }
 
 .technologies details .summary {
-  background-color: #26e28e;
+  background-color: var(--color-tertiary);
   display: none;
 }
 
@@ -451,6 +458,53 @@ footer a:hover {
   width: 4.375rem;
   height: 4.375rem;
   margin: 1rem;
+}
+
+.services {
+  border-top: 2px solid var(--color-primary);
+  padding-top: 4rem;
+  margin-bottom: -10rem;
+  flex-direction: column;
+}
+
+section aside {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border: 1px solid var(--color-primary);
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: none;
+  padding: 2rem;
+  margin: 0 auto;
+  width: 30%;
+}
+
+section aside:hover {
+  box-shadow: 2px 2px 10px var(--color-primary);
+}
+
+.services h3 {
+  color: var(--color-primary);
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+.services .cards {
+  display: flex;
+  gap: 4rem;
+  height: fit-content;
+}
+
+.services .cards aside img {
+  height: 100px;
+  width: 100px;
+  margin: auto;
+  margin-bottom: 1rem;
+}
+
+.border-right {
+  border-right: 2px solid var(--color-primary);
 }
 
 @media only screen and (max-width: 1500px) {
@@ -517,5 +571,13 @@ footer a:hover {
   .why-us ul {
     width: 90%;
     margin: auto;
+  }
+
+  .cards {
+    flex-direction: column;
+  }
+
+  .cards aside {
+    width: 80%;
   }
 }
