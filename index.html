@@ -1,362 +1,655 @@
-<!DOCTYPE html>
-<html lang="en-US">
-
-<head>
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
     <meta charset="UTF-8" />
-    <link rel="icon" href="./images/illucrum_icon.png" />
-    <title>Illucrum LLC</title>
-    <meta name="description" content="Software develpment solutions that work like magic" />
-    <meta name="keywords"
-        content="Software development, IT, nearshoring, nearshore, Java, web development, fullstack, frontend, backend, freelance, html, css, javascript, intershop, salesforce, e-commerce" />
-    <meta name="author" content="Szymon Kokot" />
-    <link rel="stylesheet" href="./styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Illucrum - SEO audits, website optimization, and full web builds for growing businesses. We don't just find problems. We fix them."
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#0a0a0a" />
+    <meta property="og:title" content="Illucrum - SEO & Web Growth" />
+    <meta
+      property="og:description"
+      content="Start with an audit. End with a better website. Illucrum helps SMEs grow through strategic SEO and web development."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://illucrum.com" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Illucrum - SEO & Web Growth" />
+    <meta
+      name="twitter:description"
+      content="Start with an audit. End with a better website."
+    />
+    <title>Illucrum - SEO Audits &amp; Web Growth</title>
     <link rel="canonical" href="https://illucrum.com/" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta property="og:image" content="https://illucrum.com/images/background.jpg" />
-    <meta property="og:title" content="Illucrum LLC" />
-    <meta property="og:description" content="Software development solutions that work like magic" />
-</head>
+    <link rel="stylesheet" href="./styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Illucrum LLC",
+        "url": "https://illucrum.com",
+        "email": "szymon.kokot@illucrum.com",
+        "description": "SEO audits, optimization, and web builds for growing businesses.",
+        "serviceType": ["SEO Audit", "Website Optimization", "Web Development"]
+      }
+    </script>
+    <link rel="icon" href="./images/logo-ico.png">
+  </head>
+  <body>
+    <!-- ═══ NAV ═══ -->
+    <nav class="main-nav" role="navigation" aria-label="Main navigation">
+      <a href="/" class="nav-logo" aria-label="Illucrum home">
+        <img
+          class="logo-dark"
+          src="./images/logo.png"
+          alt="Illucrum's logo"
+          width="26"
+          height="26"
+          aria-hidden="true"
+        />
+        <img
+          class="logo-light"
+          src="./images/logo.png"
+          alt="Illucrum's logo"
+          width="26"
+          height="26"
+          aria-hidden="true"
+        />
+        Illucrum
+      </a>
 
-<body>
-    <header>
-        <div class="upper-header">
-            <img src="./images/illucrum_logo.png" alt="Illucrum's logo" width="300" height="80" loading="lazy" />
-            <a href="mailto:szymon.kokot@illucrum.com">szymon.kokot@illucrum.com</a>
-        </div>
-        <div class="middle-header">
-            <h1>Illucrum LLC</h1>
-            <p>Software development solutions that work like magic</p>
-        </div>
-        <div class="lower-header">
-            <p>Comfortable with the best technologies:</p>
-            <div>
-                <img src="./images/logos/angular.png" alt="angular" width="50" height="50" loading="lazy" />
-                <img src="./images/logos/spring.png" alt="spring" width="50" height="50" loading="lazy" />
-                <img src="./images/logos/dotnet.png" alt="dotnet" width="50" height="50" loading="lazy" />
-                <img src="./images/logos/wordpress.png" alt="wordpress" width="50" height="50" loading="lazy" />
-                <img src="./images/logos/intershop.png" alt="intershop" width="50" height="50" loading="lazy" />
-                <img src="./images/logos/python.png" alt="python" width="50" height="50" loading="lazy" />
-                <img src="./images/logos/openai.png" alt="openai" width="50" height="50" loading="lazy" />
-                <img src="./images/logos/deepseek.png" alt="deepseek" width="50" height="50" loading="lazy" />
-                <img src="./images/logos/nativescript.png" alt="native script" width="50" height="50" loading="lazy" />
-                <img src="./images/logos/azure.png" alt="azure" width="50" height="50" loading="lazy" />
-                <img src="./images/logos/aws.png" alt="aws" width="50" height="50" loading="lazy" />
-                <img src="./images/logos/docker.png" alt="docker" width="50" height="50" loading="lazy" />
-            </div>
-        </div>
-    </header>
+      <div class="nav-links" id="navLinks">
+        <a href="#services">Services</a>
+        <a href="#process">Process</a>
+        <a href="#why">Why Us</a>
+        <a href="mailto:szymon.kokot@illucrum.com" class="nav-cta"
+          >Get in Touch</a
+        >
+      </div>
+
+      <div class="nav-right">
+        <button
+          class="theme-toggle"
+          id="themeToggle"
+          aria-label="Toggle light/dark theme"
+        >
+          <!-- Moon (shown in dark mode) -->
+          <svg
+            class="icon-moon"
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+          </svg>
+          <!-- Sun (shown in light mode) -->
+          <svg
+            class="icon-sun"
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <circle cx="12" cy="12" r="5" />
+            <line x1="12" y1="1" x2="12" y2="3" />
+            <line x1="12" y1="21" x2="12" y2="23" />
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+            <line x1="1" y1="12" x2="3" y2="12" />
+            <line x1="21" y1="12" x2="23" y2="12" />
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+          </svg>
+        </button>
+        <button
+          class="hamburger"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+          aria-controls="navLinks"
+          onclick="toggleNav(this)"
+        >
+          <svg
+            width="22"
+            height="22"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+          >
+            <line x1="3" y1="6" x2="21" y2="6" />
+            <line x1="3" y1="12" x2="21" y2="12" />
+            <line x1="3" y1="18" x2="21" y2="18" />
+          </svg>
+        </button>
+      </div>
+    </nav>
+
     <main>
-        <section>
-            <div>
-                <h2>Best IT solutions in a flick of a wand</h2>
+      <!-- ═══ HERO ═══ -->
+      <section class="hero" aria-labelledby="hero-heading">
+        <div class="hero-grid" aria-hidden="true"></div>
+        <div class="hero-glow" aria-hidden="true"></div>
+        <div class="container">
+          <div class="hero-content">
+            <div class="badge">SEO · Optimization · Web Build</div>
+            <h1 id="hero-heading">
+              Your website should<br />be <span>working harder.</span>
+            </h1>
+            <p class="hero-sub">
+              We start with a deep SEO audit - then we don't stop there. Whether
+              it's optimizing what you have or building something better from
+              scratch, Illucrum turns insight into growth.
+            </p>
+            <div class="hero-actions">
+              <a href="mailto:szymon.kokot@illucrum.com" class="btn-primary">
+                Start a free conversation
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </a>
+              <a href="#services" class="btn-ghost">See what we do</a>
+            </div>
+          </div>
+        </div>
+        <div class="scroll-hint" aria-hidden="true">
+          <div class="scroll-line"></div>
+          scroll
+        </div>
+      </section>
+
+      <!-- ═══ STATS ═══ 
+      <div class="container">
+        <div class="stats reveal" role="list">
+          <div class="stat" role="listitem">
+            <div class="stat-number">46</div>
+            <div class="stat-label">Audit checkpoints</div>
+          </div>
+          <div class="stat" role="listitem">
+            <div class="stat-number">ROI</div>
+            <div class="stat-label">
+              Every recommendation tied to business impact
+            </div>
+          </div>
+          <div class="stat" role="listitem">
+            <div class="stat-number">0</div>
+            <div class="stat-label">Cookies. No tracking. Ever.</div>
+          </div>
+        </div>
+      </div>
+    -->
+      <!-- ═══ SERVICES ═══ -->
+      <section class="section" id="services" aria-labelledby="services-heading">
+        <div class="container">
+          <div class="section-intro reveal">
+            <span class="section-label">What we do</span>
+            <h2 id="services-heading">Start anywhere.<br />Go further.</h2>
+            <p>
+              An audit shows you exactly where you stand. But knowing the
+              problem is just step one - we help you fix it, optimize it, or
+              rebuild entirely.
+            </p>
+          </div>
+          <div class="services-grid">
+            <article class="card featured reveal">
+              <div class="card-icon" aria-hidden="true">
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#00c96b"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <circle cx="11" cy="11" r="8" />
+                  <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                  <line x1="11" y1="8" x2="11" y2="14" />
+                  <line x1="8" y1="11" x2="14" y2="11" />
+                </svg>
+              </div>
+              <h3>SEO Audit</h3>
+              <p>
+                A 46-point deep-dive into your technical health, on-page
+                signals, keyword opportunities, backlinks, competitor gaps, and
+                UX. No fluff - just clarity and a clear action plan.
+              </p>
+            </article>
+
+            <article class="card reveal">
+              <div class="card-icon" aria-hidden="true">
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#00c96b"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <polyline points="23 6 13.5 15.5 8.5 10.5 1 18" />
+                  <polyline points="17 6 23 6 23 12" />
+                </svg>
+              </div>
+              <h3>SEO &amp; Performance Optimization</h3>
+              <p>
+                We implement what the audit uncovers. Technical fixes, on-page
+                improvements, page speed, structured data, and everything in
+                between - done for you.
+              </p>
+            </article>
+
+            <article class="card reveal">
+              <div class="card-icon" aria-hidden="true">
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#00c96b"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <rect x="3" y="3" width="18" height="18" rx="2" />
+                  <line x1="3" y1="9" x2="21" y2="9" />
+                  <line x1="9" y1="21" x2="9" y2="9" />
+                </svg>
+              </div>
+              <h3>Web Design &amp; Build</h3>
+              <p>
+                Sometimes the best fix is a fresh start. We design and build
+                fast, SEO-ready websites that convert visitors into customers -
+                built on a foundation Google rewards.
+              </p>
+            </article>
+
+            <article class="card reveal">
+              <div class="card-icon" aria-hidden="true">
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#00c96b"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
+                  />
+                </svg>
+              </div>
+              <h3>Strategic Consulting</h3>
+              <p>
+                We translate audit data into a prioritized roadmap you can
+                actually execute - with or without us continuing to help.
+              </p>
+            </article>
+
+            <article class="card reveal">
+              <div class="card-icon" aria-hidden="true">
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#00c96b"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                  <path d="M2 17l10 5 10-5" />
+                  <path d="M2 12l10 5 10-5" />
+                </svg>
+              </div>
+              <h3>Local SEO</h3>
+              <p>
+                Google Business Profile, local citations, and map pack
+                visibility - the signals that put you in front of nearby
+                customers who are ready to buy.
+              </p>
+            </article>
+
+            <article class="card reveal">
+              <div class="card-icon" aria-hidden="true">
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#00c96b"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <circle cx="12" cy="12" r="10" />
+                  <polyline points="12 6 12 12 16 14" />
+                </svg>
+              </div>
+              <h3>Ongoing Oversight</h3>
+              <p>
+                Monthly strategy reviews, rank tracking, and continuous
+                improvement - so your results compound rather than stall.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <hr class="divider" />
+
+      <!-- ═══ PROCESS ═══ -->
+      <section class="section" id="process" aria-labelledby="process-heading">
+        <div class="container">
+          <div class="section-intro reveal">
+            <span class="section-label">How it works</span>
+            <h2 id="process-heading">From audit<br />to action.</h2>
+            <p>
+              No mystery deliverables, no disappearing after the report. A clear
+              path from problem to solution.
+            </p>
+          </div>
+          <div class="process-list">
+            <div class="process-step reveal">
+              <div class="step-number" aria-hidden="true">01</div>
+              <div class="step-content">
+                <h3>Discovery Call</h3>
                 <p>
-                    The name Illucrum blends illusio (illusion) and lucrum (profit), which is how software projects tend
-                    to go: a little magic, sometimes a little chaos, but always a happy ending. We believe we believe
-                    that well-crafted software should feel seamless, even when the
-                    architecture behind it is anything but that. From backend
-                    integrations to user-facing platforms, at Illucrum we build reliable tech that looks effortless —
-                    like any good trick should.
+                  A short conversation to understand your business, goals, and
+                  what's blocking growth. No pressure, no pitch.
                 </p>
-                <a class="button" href="mailto:szymon.kokot@illucrum.com">Contact us</a>
+              </div>
             </div>
-            <img src="./images/side/side-1.png" alt="Some decoration photo" />
-        </section>
-        <section class="superquote">
-            <figure class="super-quote-figure">
-                <blockquote class="super-quote-blockquote">
-                    <p class="super-quote-p super-quote-p-1" id="superquote_1">Code is poetry</p>
-                    <p class="super-quote-p super-quote-p-2" id="superquote_2">write it with us</p>
-                </blockquote>
-            </figure>
-            <script>
-                let superquote_1 = document.getElementById("superquote_1");
-                let superquote_2 = document.getElementById("superquote_2");
-
-                document.addEventListener("scroll", () => {
-                    let height = document.documentElement.clientHeight;
-
-                    let bottom = superquote_1.getBoundingClientRect().bottom;
-
-                    if (bottom < 0) {
-                        bottom = 0;
-                    } else if (bottom > height) {
-                        bottom = height;
-                    }
-
-                    let percentage = Math.round(((height - bottom) / height) * 100) * 4;
-
-                    let computedPercentage_1 = window.getComputedStyle(superquote_1).getPropertyValue("--percentage_1_2").replace("%", "");
-                    let computedPercentage_2 = window.getComputedStyle(superquote_2).getPropertyValue("--percentage_2_2").replace("%", "");
-                    let speed_1 = Math.min(Math.abs(computedPercentage_1 - Math.min(Math.max(percentage, 0), 100)) / 100, 1);
-                    let speed_2 = Math.min(Math.abs(computedPercentage_2 - Math.min(Math.max(percentage - 80, 0), 100)) / 100, 1);
-
-                    let val1 = Math.min(Math.max(percentage - 5, 0), 100);
-                    let val2 = Math.min(Math.max(percentage, 0), 100);
-                    let val3 = Math.min(Math.max(percentage - 85, 0), 100);
-                    let val4 = Math.min(Math.max(percentage - 80, 0), 100);
-
-                    superquote_1.style.setProperty("--percentage_1_1", `${val1}%`);
-                    superquote_1.style.setProperty("--percentage_1_2", `${val2}%`);
-                    superquote_1.style.setProperty("--transition-speed", `${speed_1}s`);
-                    superquote_2.style.setProperty("--percentage_2_1", `${val3}%`);
-                    superquote_2.style.setProperty("--percentage_2_2", `${val4}%`);
-                    superquote_2.style.setProperty("--transition-speed", `${speed_2}s`);
-                });
-            </script>
-        </section>
-        <section>
-            <img class="border-right" src="./images/side/side-2.png" alt="Some decoration photo" />
-            <div>
-                <h2>We offer our expertise so you don't have to worry</h2>
+            <div class="process-step reveal">
+              <div class="step-number" aria-hidden="true">02</div>
+              <div class="step-content">
+                <h3>The Audit</h3>
                 <p>
-                    We understand that writing code is not just a science. It’s an art. We know it’s not about just
-                    „making it work", it’s about creating a whole new elegant solution for both the end users and the
-                    developers to come. We understand it's not only about the pretty looks of the frontend, it's also
-                    about the speed, efficiency and precision of a very clear and straight-forward backend.
+                  A structured 46-point analysis across technical SEO, on-page
+                  signals, keyword opportunities, backlinks, competitor gaps,
+                  local presence, and UX - delivered as a clear, prioritized
+                  report.
                 </p>
-                <p>We don’t <strong>save time</strong> writing poor code. We save time <strong>not writing</strong> unnecesarely messy code.</p>
-                <a class="button" href="mailto:szymon.kokot@illucrum.com">Contact us</a>
+              </div>
             </div>
-        </section>
-        <section class="services">
-                <h2>Services</h2>
-                <h3>Anything you need, we can do. Our specialties are:</h3>
-                <div class="cards">
-                    <aside>
-                        <img src="./images/icons/globe-solid-full.svg" alt="azure" width="100" height="100" loading="lazy" />
-                        <h4>Web application development</h4>
-                        <p>We have your website done and live in no time. Just choose the technology you want us to choose, give as your desing, and in no time we have it up and running.</p>
-                    </aside>
-                    <aside>
-                        <img src="./images/icons/people-group-solid-full.svg" alt="docker" width="100" height="100" loading="lazy" />
-                        <h4>Development teams</h4>
-                        <p>Well rounded teams of well grounded professionals. A good option for saving costs and being in control from the beggining.</p>
-                    </aside>
-                    <aside>
-                        <img src="./images/icons/user-plus-solid-full.svg" alt="aws" width="100" height="100" loading="lazy" />
-                        <h4>Team extension</h4>
-                        <p>Perfect option if you already have a team, that could use some help. Ideal for dealing with work heavy seasons.</p>
-                    </aside>
-                </div>
-        </section>
-        <section class="why-us reverse">
-            <h2>Why choose us</h2>
-            <div>
-                <ul>
-                    <li>
-                        <img src="./images/icons/check-double-solid-full.svg" alt="code icon" width="40" height="40"
-                            loading="lazy" />
-                        <div>
-                            <h3>Personalized Solutions, Not One-Size-Fits-All</h3>
-                            <p>We take the time to understand your business, goals, and challenges before proposing a
-                                solution. Every product we develop and every recommendation we make is tailored to your
-                                specific needs—no templates, no shortcuts.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <img src="./images/icons/lock-solid-full.svg" alt="meteor icon" width="40" height="40"
-                            loading="lazy" />
-                        <div>
-                            <h3>Security and Scalability from Day One</h3>
-                            <p>We build with the future in mind. Every product we develop is secure, scalable, and
-                                maintainable—designed to grow with your business and withstand today’s digital threats.
-                            </p>
-                    </li>
-                    <li>
-                        <img src="./images/icons/users-gear-solid-full.svg" alt="contract icon" width="40" height="40"
-                            loading="lazy" />
-                        <div>
-                            <h3>End-to-End Expertise</h3>
-                            <p>From initial strategy and consulting to development, deployment, and support—we cover the
-                                full lifecycle. You don’t have to juggle multiple vendors or worry about gaps in
-                                service. We’ve got it all covered under one roof.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <img src="./images/icons/scale-unbalanced-solid-full.svg" alt="bills icon" width="40"
-                            height="40" loading="lazy" />
-                        <div>
-                            <h3>Scale Up or Down On Demand</h3>
-                            <p>Your needs change—and we’re built for that. Quickly scale your team size up or down
-                                depending on project phase, budget, or delivery demands, without compromising quality or
-                                continuity.</p>
-                        </div>
-                    </li>
-                </ul>
-                <ul>
-                    <li>
-                        <img src="./images/icons/comments-solid-full.svg" alt="code icon" width="40" height="40"
-                            loading="lazy" />
-                        <div>
-                            <h3>Transparent Process, Clear Communication</h3>
-                            <p>We believe trust is built on transparency. From project timelines and milestones to
-                                budgets and deliverables, we keep you informed every step of the way — with no
-                                surprises.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <img src="./images/icons/rocket-solid-full.svg" alt="meteor icon" width="40" height="40"
-                            loading="lazy" />
-                        <div>
-                            <h3>Agile, Fast and Flexible</h3>
-                            <p>Slow is smooth. Smooth is fast. Whether you need a rapid MVP or ongoing iteration, we
-                                adapt to your pace and priorities, ensuring quicker time-to-market and more responsive
-                                updates.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <img src="./images/icons/chart-line-solid-full.svg" alt="contract icon" width="40" height="40"
-                            loading="lazy" />
-                        <div>
-                            <h3>Build High-Performance Teams, Fast</h3>
-                            <p>We help you build high-performing development teams from the ground up. From assembling
-                                the right mix of skills to setting up best practices in agile, DevOps, and
-                                communication—we lay the foundation for success.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <img src="./images/icons/calendar-days-solid-full.svg" alt="bills icon" width="40" height="40"
-                            loading="lazy" />
-                        <div>
-                            <h3>Long-Term Partner, not Just a Vendor</h3>
-                            <p>Our goal isn’t just to deliver a project — it’s to build a lasting relationship. We offer
-                                maintainable solutions that last for years with easy maintenance.</p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <section class="technologies">
-            <h2>Technologies</h2>
-            <div class="table">
-                <details name="technologies" open>
-                    <summary>Web development</summary>
-                    <div class="summary">Web development</div>
-                    <div class="content">
-                        <img src="./images/logos/react.png" alt="react" width="70" height="70" loading="lazy" />
-                        <img src="./images/logos/angular.png" alt="angular" width="70" height="70" loading="lazy" />
-                        <img src="./images/logos/vue.png" alt="vue" width="70" height="70" loading="lazy" />
-                        <img src="./images/logos/java.png" alt="java" width="70" height="70" loading="lazy" />
-                        <img src="./images/logos/spring.png" alt="spring" width="70" height="70" loading="lazy" />
-                        <img src="./images/logos/csharp.png" alt="csharp" width="70" height="70" loading="lazy" />
-                        <img src="./images/logos/dotnet.png" alt="csharp" width="70" height="70" loading="dotnet" />
-                        <img src="./images/logos/php.png" alt="php" width="70" height="70" loading="lazy" />
-                        <img src="./images/logos/laravel.png" alt="laravel" width="70" height="70" loading="lazy" />
-                        <img src="./images/logos/python.png" alt="python" width="70" height="70" loading="lazy" />
-                        <img src="./images/logos/mysql.png" alt="mysql" width="70" height="70" loading="lazy" />
-                        <img src="./images/logos/mongo.png" alt="mongo" width="70" height="70" loading="lazy" />
-                    </div>
-                </details>
-                <details name="technologies">
-                    <summary>CMS & E-commerce</summary>
-                    <div class="summary">CMS & E-commerce</div>
-                    <div class="content">
-                        <img src="./images/logos/wordpress.png" alt="wordpress" width="70" height="70" loading="lazy" />
-                        <img src="./images/logos/prestashop.png" alt="prestashop" width="70" height="70"
-                            loading="lazy" />
-                        <img src="./images/logos/shopify.png" alt="shopify" width="70" height="70" loading="lazy" />
-                        <img src="./images/logos/intershop.png" alt="intershop" width="70" height="70" loading="lazy" />
-                        <img src="./images/logos/salesforce.png" alt="salesforce" width="70" height="70"
-                            loading="lazy" />
-                    </div>
-                </details>
-                <details name="technologies">
-                    <summary>AI</summary>
-                    <div class="summary">AI</div>
-                    <div class="content">
-                        <img src="./images/logos/openai.png" alt="openai" width="70" height="70" loading="lazy" />
-                        <img src="./images/logos/azureml.png" alt="azureml" width="70" height="70" loading="lazy" />
-                        <img src="./images/logos/flowise.png" alt="flowise" width="70" height="70" loading="lazy" />
-                        <img src="./images/logos/deepseek.png" alt="deepseek" width="70" height="70" loading="lazy" />
-                        <img src="./images/logos/python.png" alt="python" width="70" height="70" loading="lazy" />
-                    </div>
-                </details>
-                <details name="technologies">
-                    <summary>Mobile apps</summary>
-                    <div class="summary">Mobile apps</div>
-                    <div class="content">
-                        <img src="./images/logos/kotlin.png" alt="kotlin" width="70" height="70" loading="lazy" />
-                        <img src="./images/logos/nativescript.png" alt="nativescript" width="70" height="70"
-                            loading="lazy" />
-                        <img src="./images/logos/react.png" alt="react native" width="70" height="70" loading="lazy" />
-                        <img src="./images/logos/androidstudio.png" alt="android studio" width="70" height="70"
-                            loading="lazy" />
-                    </div>
-                </details>
-                <details name="technologies">
-                    <summary>DevOps</summary>
-                    <div class="summary">DevOps</div>
-                    <div class="content">
-                        <img src="./images/logos/azure.png" alt="azure" width="70" height="70" loading="lazy" />
-                        <img src="./images/logos/aws.png" alt="aws" width="70" height="70" loading="lazy" />
-                        <img src="./images/logos/atlassian.png" alt="atlassian" width="70" height="70" loading="lazy" />
-                        <img src="./images/logos/git.png" alt="git" width="70" height="70" loading="lazy" />
-                        <img src="./images/logos/jenkins.png" alt="jenkins" width="70" height="70" loading="lazy" />
-                        <img src="./images/logos/kubernates.png" alt="kubernates" width="70" height="70"
-                            loading="lazy" />
-                        <img src="./images/logos/docker.png" alt="docker" width="70" height="70" loading="lazy" />
-                    </div>
-                </details>
-            </div>
-        </section>
-        <section>
-            <blockquote>
-                <em>„Programming is the art of skillful lying”</em>
-                <cite>Szymon Kokot, programmer and founder of Illucrum</cite>
-            </blockquote>
-        </section>
-        <section class="clients">
-            <h2>Our products</h2>
-            <div class="images-row">
-                <a href="https://jhcr.illucrum.com/" target="_blank"><img src="./images/products/jhcr.png" alt="JHCR" width="82" height="82" loading="lazy" /></a>
-            </div>
-        </section>
-        <section>
-            <div>
-                <h2>Who are we</h2>
+            <div class="process-step reveal">
+              <div class="step-number" aria-hidden="true">03</div>
+              <div class="step-content">
+                <h3>Roadmap Debrief</h3>
                 <p>
-                    No spells, no incantations,<br>
-                    Just a keyboard and a screen.<br>
-                    No wand waving and no couldrons,<br>
-                    In different colors, words gleam.<br>
-                    No fireworks, no sparklers,<br>
-                    Lines embroidered on the scene,<br>
-                    A delusion of understanding,<br>
-                    Covers the magic within.<br>
-                    An illusion of messines<br>
-                    Twists reality into a dream.
+                  We walk through the findings together. You leave knowing
+                  exactly what to fix first, what's a quick win, and the 90-day
+                  path forward.
                 </p>
-                <p>
-                    A clean harmony of instructions,<br>
-                    almost pure determinism.<br>
-                    The beauty of the language,<br>
-                    The script's minimalism.<br>
-                    All of it feels like magic,<br>
-                    Keeps you away from realism;<br>
-                    The enchanted and enchanting,<br>
-                    Art of illusionism.
-                </p>
-                <p>
-                    We have the magic behind the trick,<br>
-                    don't you believe? Come and see.<br>
-                    We make it smooth, we make it fast,<br>
-                    We keep it simple, we make it last,<br>
-                    We are the artists of our craft,<br>
-                    We are Illucrum LLC.
-                </p>
+              </div>
             </div>
-            <img src="./images/side/side-3.png" alt="Some decoration photo" />
-        </section>
-        <section class="clients">
-            <h2>Smart companies that trusted us:</h2>
-            <div class="images-row">
-                <img src="./images/companies/sugerendo.png" alt="Sugerendo" width="82" height="82" loading="lazy" />
+            <div class="process-step reveal">
+              <div class="step-number" aria-hidden="true">04</div>
+              <div class="step-content">
+                <h3>Implementation (optional)</h3>
+                <p>
+                  Want us to execute? We handle everything from technical fixes
+                  to a full redesign. Or we hand you the roadmap - your call.
+                </p>
+              </div>
             </div>
-        </section>
+            <div class="process-step reveal">
+              <div class="step-number" aria-hidden="true">05</div>
+              <div class="step-content">
+                <h3>Measure &amp; Iterate</h3>
+                <p>
+                  Rankings move when you act on good data consistently. We track
+                  what matters and adjust as the landscape evolves.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr class="divider" />
+
+      <!-- ═══ WHY ═══ -->
+      <section class="section" id="why" aria-labelledby="why-heading">
+        <div class="container">
+          <div class="section-intro reveal">
+            <span class="section-label">Why Illucrum</span>
+            <h2 id="why-heading">We don't sell<br />spreadsheets.</h2>
+            <p>
+              Anyone can generate a report. We focus on what the data means for
+              your business - and what you should actually do about it.
+            </p>
+          </div>
+          <div class="why-grid">
+            <div class="why-item reveal">
+              <div class="why-dot" aria-hidden="true"></div>
+              <div>
+                <h4>ROI-first thinking</h4>
+                <p>
+                  Every recommendation is framed around business impact - not
+                  just ranking positions.
+                </p>
+              </div>
+            </div>
+            <div class="why-item reveal">
+              <div class="why-dot" aria-hidden="true"></div>
+              <div>
+                <h4>No jargon, no gatekeeping</h4>
+                <p>
+                  You'll understand what we found, why it matters, and what to
+                  do about it.
+                </p>
+              </div>
+            </div>
+            <div class="why-item reveal">
+              <div class="why-dot" aria-hidden="true"></div>
+              <div>
+                <h4>Audit + execution in one place</h4>
+                <p>
+                  From discovery to full web build - no handoff friction, no
+                  "figure it out yourself."
+                </p>
+              </div>
+            </div>
+            <div class="why-item reveal">
+              <div class="why-dot" aria-hidden="true"></div>
+              <div>
+                <h4>Built for SMEs</h4>
+                <p>
+                  We understand growth constraints. Recommendations are
+                  realistic, not aspirational.
+                </p>
+              </div>
+            </div>
+            <div class="why-item reveal">
+              <div class="why-dot" aria-hidden="true"></div>
+              <div>
+                <h4>Zero cookies, full transparency</h4>
+                <p>
+                  We don't track you here - and we apply that same principle to
+                  how we advise clients.
+                </p>
+              </div>
+            </div>
+            <div class="why-item reveal">
+              <div class="why-dot" aria-hidden="true"></div>
+              <div>
+                <h4>Long-term partnership mindset</h4>
+                <p>
+                  We want your business to grow - because aligned incentives are
+                  the foundation of good work.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ═══ CTA ═══ -->
+      <section class="section-sm" aria-labelledby="cta-heading">
+        <div class="container">
+          <div class="cta-band reveal">
+            <h2 id="cta-heading">Ready to see what's holding you back?</h2>
+            <p>
+              Send us a message - no commitment, no boilerplate proposal. Just a
+              real conversation about where your website stands and where it
+              could go.
+            </p>
+            <a href="mailto:szymon.kokot@illucrum.com" class="btn-primary">
+              Start the conversation
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </a>
+            <a href="mailto:szymon.kokot@illucrum.com" class="cta-email"
+              >szymon.kokot@illucrum.com</a
+            >
+          </div>
+        </div>
+      </section>
     </main>
-    <footer>
-        <p>© 2025 Illucrum LLC. All rights reserved. <a href="privacy-policy">Privacy Policy</a></p>
-    </footer>
-</body>
 
+    <!-- ═══ FOOTER ═══ -->
+    <footer class="site-footer" role="contentinfo">
+      <div class="container">
+        <div class="footer-inner">
+          <div class="footer-brand">
+            <a href="/" class="nav-logo" aria-label="Illucrum home">
+              <img
+                class="logo-dark"
+                src="logo.png"
+                alt=""
+                width="22"
+                height="22"
+                aria-hidden="true"
+              />
+              <img
+                class="logo-light"
+                src="logoblack.png"
+                alt=""
+                width="22"
+                height="22"
+                aria-hidden="true"
+              />
+              Illucrum
+            </a>
+            <p>
+              SEO audits, optimization, and web builds for businesses serious
+              about growth.
+            </p>
+            <p style="margin-top: 0.6rem">
+              <a
+                href="mailto:szymon.kokot@illucrum.com"
+                style="color: var(--text-muted)"
+              >
+                szymon.kokot@illucrum.com
+              </a>
+            </p>
+          </div>
+          <div class="footer-col">
+            <h5>Services</h5>
+            <a href="#services">SEO Audit</a>
+            <a href="#services">Optimization</a>
+            <a href="#services">Web Build</a>
+            <a href="#services">Local SEO</a>
+          </div>
+          <div class="footer-col">
+            <h5>Legal</h5>
+            <a href="/terms">Terms of Service</a>
+            <a href="/privacy">Privacy Policy</a>
+            <a href="/disclaimer">Disclaimer</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span
+            >© <span id="year"></span> Illucrum LLC. All rights reserved.</span
+          >
+          <span>No cookies. No tracking.</span>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Year
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      // Mobile nav toggle
+      function toggleNav(btn) {
+        const nav = document.getElementById("navLinks");
+        const isOpen = nav.classList.toggle("open");
+        btn.setAttribute("aria-expanded", isOpen);
+      }
+      document.querySelectorAll("#navLinks a").forEach((a) => {
+        a.addEventListener("click", () => {
+          document.getElementById("navLinks").classList.remove("open");
+        });
+      });
+
+      // Theme toggle - persist preference
+      const html = document.documentElement;
+      const btn = document.getElementById("themeToggle");
+      const saved = localStorage.getItem("illucrum-theme");
+      if (saved) html.setAttribute("data-theme", saved);
+
+      btn.addEventListener("click", () => {
+        const current = html.getAttribute("data-theme");
+        const next = current === "dark" ? "light" : "dark";
+        html.setAttribute("data-theme", next);
+        try {
+          localStorage.setItem("illucrum-theme", next);
+        } catch (e) {}
+      });
+
+      // Scroll reveal
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((e) => {
+            if (e.isIntersecting) {
+              e.target.classList.add("visible");
+              observer.unobserve(e.target);
+            }
+          });
+        },
+        { threshold: 0.07 },
+      );
+      document
+        .querySelectorAll(".reveal")
+        .forEach((el) => observer.observe(el));
+    </script>
+  </body>
 </html>

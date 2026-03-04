@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <title>Disclaimer - Illucrum LLC</title>
+    <link rel="canonical" href="https://illucrum.com/disclaimer" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="icon" href="./images/logo-ico.png" />
+  </head>
+
+  <body>
+    <nav class="main-nav" role="navigation" aria-label="Main navigation">
+      <a href="/" class="nav-logo" aria-label="Illucrum home">
+        <img
+          class="logo-dark"
+          src="./images/logo.png"
+          alt="Illucrum's logo"
+          width="26"
+          height="26"
+          aria-hidden="true"
+        />
+        <img
+          class="logo-light"
+          src="./images/logo.png"
+          alt="Illucrum's logo"
+          width="26"
+          height="26"
+          aria-hidden="true"
+        />
+        Illucrum
+      </a>
+      <div class="nav-right">
+        <a href="/" style="color: var(--text-muted); font-size: 0.875rem"
+          >← Back to home</a
+        >
+        <button
+          class="theme-toggle"
+          id="themeToggle"
+          aria-label="Toggle light/dark theme"
+        >
+          <svg
+            class="icon-moon"
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+          </svg>
+          <svg
+            class="icon-sun"
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <circle cx="12" cy="12" r="5" />
+            <line x1="12" y1="1" x2="12" y2="3" />
+            <line x1="12" y1="21" x2="12" y2="23" />
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+            <line x1="1" y1="12" x2="3" y2="12" />
+            <line x1="21" y1="12" x2="23" y2="12" />
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+          </svg>
+        </button>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="legal-page">
+        <h1>Disclaimer</h1>
+        <p class="legal-meta">
+          Illucrum LLC &nbsp;·&nbsp; Last updated: March 2025
+        </p>
+
+        <h2>General Information</h2>
+        <p>
+          The information on this website is for general informational purposes
+          only. Illucrum LLC makes no representations or warranties of any kind
+          about the completeness, accuracy, or reliability of this information.
+        </p>
+
+        <h2>No Guarantee of Results</h2>
+        <p>
+          SEO and digital marketing involve inherent variability. Any reference
+          to potential improvements or gains represents general possibilities,
+          not guaranteed outcomes. Results vary based on industry, competition,
+          website condition, and many other factors. Past client results do not
+          guarantee similar outcomes for future clients.
+        </p>
+
+        <h2>Professional Advice</h2>
+        <p>
+          Nothing on this website constitutes legal, financial, or tax advice.
+          Consult a qualified professional for matters in those fields.
+        </p>
+
+        <h2>Third-Party Tools and Links</h2>
+        <p>
+          Illucrum LLC does not assume responsibility for the content, privacy
+          practices, or performance of any third-party website or service
+          referenced here.
+        </p>
+
+        <h2>Affiliate Disclosure</h2>
+        <p>
+          Illucrum LLC does not currently participate in affiliate programs.
+          Tools mentioned are recommended based on professional judgment only,
+          with no financial compensation from those providers.
+        </p>
+
+        <h2>Limitation of Liability</h2>
+        <p>
+          Illucrum LLC will not be liable for any loss or damage, including
+          indirect or consequential loss, arising from use of this website or
+          the information provided herein.
+        </p>
+
+        <h2>Changes</h2>
+        <p>
+          We reserve the right to modify this disclaimer at any time. Continued
+          use constitutes acceptance of the updated disclaimer.
+        </p>
+
+        <h2>Contact</h2>
+        <p>
+          <a href="mailto:szymon.kokot@illucrum.com"
+            >szymon.kokot@illucrum.com</a
+          >
+        </p>
+      </div>
+    </div>
+
+    <footer class="legal-footer">
+      <a href="/">Home</a><a href="/terms">Terms of Service</a>
+      <a href="/privacy">Privacy Policy</a>
+      <a href="/accessibility">Accessibility</a> <br /><br />
+      <span>© <span class="yr"></span> Illucrum LLC. All rights reserved.</span>
+    </footer>
+    <script>
+      document
+        .querySelectorAll(".yr")
+        .forEach((el) => (el.textContent = new Date().getFullYear()));
+      const html = document.documentElement;
+      const saved = localStorage.getItem("illucrum-theme");
+      if (saved) html.setAttribute("data-theme", saved);
+      document.getElementById("themeToggle").addEventListener("click", () => {
+        const next =
+          html.getAttribute("data-theme") === "dark" ? "light" : "dark";
+        html.setAttribute("data-theme", next);
+        try {
+          localStorage.setItem("illucrum-theme", next);
+        } catch (e) {}
+      });
+    </script>
+  </body>
+</html>
