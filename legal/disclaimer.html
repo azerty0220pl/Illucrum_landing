@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,136 +19,162 @@
   <link rel="icon" href="../images/logo-ico.png">
   <link rel="stylesheet" href="../styles.css">
 </head>
+
 <body>
-<nav class="main-nav">
-  <a href="/" class="nav-logo">
-    <img src="../images/logo.png" alt="Illucrum" class="logo-light">
-    <img src="../images/logo.png" alt="Illucrum" class="logo-dark">
-  </a>
-  <div class="nav-links" id="navLinks">
-    <div class="nav-dropdown">
-      <a href="/audits/seo-audit" tabindex="0">Audits</a>
-      <div class="dropdown-menu">
-        <a href="/audits/seo-audit">Website SEO Audit</a>
-        <a href="/audits/saas-seo-audit">SaaS SEO Audit</a>
-        <a href="/audits/professional-services-seo-audit">Professional Services SEO Audit</a>
-        <hr class="dropdown-divider">
-        <a href="/compare/basic-vs-full-seo-audit">Compare Audits</a>
+  <nav class="main-nav">
+    <a href="/" class="nav-logo">
+      <img src="../images/logo.png" alt="Illucrum" class="logo-light">
+      <img src="../images/logo.png" alt="Illucrum" class="logo-dark">
+    </a>
+    <div class="nav-links" id="navLinks">
+      <div class="nav-dropdown">
+        <a href="/audits/seo-audit" tabindex="0">Audits</a>
+        <div class="dropdown-menu">
+          <a href="/audits/seo-audit">Website SEO Audit</a>
+          <a href="/audits/saas-seo-audit">SaaS SEO Audit</a>
+          <a href="/audits/professional-services-seo-audit">Professional Services SEO Audit</a>
+          <hr class="dropdown-divider">
+          <a href="/compare/basic-vs-full-seo-audit">Compare Audits</a>
+          <a href="/compare/seo-audit-vs-saas-seo-audit">Website SEO Audit vs SaaS SEO Audit</a>
+          <a href="/compare/seo-audit-vs-professional-services-seo-audit">Website SEO Audit vs Professional Services SEO
+            Audit</a>
+          <a href="/compare/saas-vs-professional-services-seo-audit">SaaS SEO Audit vs Professional Services SEO
+            Audit</a>
+        </div>
+      </div>
+      <a href="/pricing">Pricing</a>
+      <a href="/about">About</a>
+      <a href="/faq">FAQ</a>
+      <a href="https://wa.me/48515983261?text=Hi%20Illucrum%2C%20I%27d%20like%20to%20discuss%20an%20SEO%20audit."
+        class="nav-cta" target="_blank" rel="noopener">Get in Touch &rarr;</a>
+    </div>
+    <div class="nav-right">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="2">
+          <circle cx="12" cy="12" r="5" />
+          <path
+            d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
+        </svg>
+        <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="2">
+          <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
+        </svg>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M3 12h18M3 6h18M3 18h18" />
+        </svg>
+      </button>
+    </div>
+  </nav>
+  <main class="legal-page">
+    <div class="container legal-container">
+      <h1>Disclaimer</h1>
+      <p class="legal-meta">Last updated: March 2026 &middot; Illucrum LLC</p>
+      <h2>SEO Results Disclaimer</h2>
+      <p>SEO audit results and recommendations do not guarantee specific ranking improvements. Search engine algorithms
+        change frequently and results depend on many factors outside our control, including but not limited to:
+        competitor activity, algorithm updates, content changes, and technical implementation quality.</p>
+
+      <h2>Professional Advice</h2>
+      <p>The information provided in our audit reports is intended for informational and business improvement purposes.
+        It does not constitute legal, financial, or professional advice. For regulated sectors (legal, financial,
+        medical), always consult with qualified professionals in your jurisdiction.</p>
+
+      <h2>Third-Party Tools &amp; Data</h2>
+      <p>Our audits reference data from third-party tools (Google PageSpeed Insights, SSL Labs, SEOptimer, and others).
+        While we make every effort to ensure accuracy, we cannot guarantee the accuracy of data produced by third-party
+        tools.</p>
+
+      <h2>Statistics &amp; Claims</h2>
+      <p>Statistics cited on this website and in our content (e.g., SEO ROI figures, conversion rates) are sourced from
+        publicly available research. Sources are credited where cited. Individual results will vary.</p>
+
+      <h2>External Links</h2>
+      <p>This website may contain links to external websites. Illucrum is not responsible for the content, privacy
+        practices, or accuracy of external sites.</p>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <strong>Illucrum</strong>
+          <p>SEO audits, optimisation, and web builds for businesses serious about growth.</p>
+          <p>Austin, TX &middot; Serving businesses across Europe</p>
+          <a href="mailto:szymon.kokot@illucrum.com" class="footer-email">szymon.kokot@illucrum.com</a>
+        </div>
+        <div class="footer-col">
+          <h5>Services</h5>
+          <a href="/audits/seo-audit">Website SEO Audit</a>
+          <a href="/audits/saas-seo-audit">SaaS SEO Audit</a>
+          <a href="/audits/professional-services-seo-audit">Professional Services SEO Audit</a>
+          <a href="/pricing">Pricing</a>
+        </div>
+        <div class="footer-col">
+          <h5>Content</h5>
+          <a href="/about">About</a>
+          <a href="/faq">FAQ</a>
+          <a href="/seo-facts">SEO Facts</a>
+        </div>
+        <div class="footer-col">
+          <h5>Contact</h5>
+          <a href="https://wa.me/48515983261" target="_blank" rel="noopener">WhatsApp</a>
+          <a href="https://t.me/m/w209xo-FZGJk" target="_blank" rel="noopener">Telegram</a>
+          <a href="https://linkedin.com/company/illucrum" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://clutch.co/profile/illucrum" target="_blank" rel="noopener">Clutch</a>
+        </div>
+        <div class="footer-col">
+          <h5>Legal</h5>
+          <a href="/legal/terms">Terms of Service</a>
+          <a href="/legal/privacy">Privacy Policy</a>
+          <a href="/legal/disclaimer">Disclaimer</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Illucrum. All rights reserved.</span>
       </div>
     </div>
-    <a href="/pricing">Pricing</a>
-    <a href="/about">About</a>
-    <a href="/faq">FAQ</a>
-    <a href="https://wa.me/48515983261?text=Hi%20Illucrum%2C%20I%27d%20like%20to%20discuss%20an%20SEO%20audit." class="nav-cta" target="_blank" rel="noopener">Get in Touch &rarr;</a>
-  </div>
-  <div class="nav-right">
-    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
-      <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
-      <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
-    </button>
-    <button class="hamburger" id="hamburger" aria-label="Menu">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
-    </button>
-  </div>
-</nav>
-<main class="legal-page">
-  <div class="container legal-container">
-    <h1>Disclaimer</h1>
-    <p class="legal-meta">Last updated: March 2026 &middot; Illucrum LLC</p>
-    <h2>SEO Results Disclaimer</h2>
-    <p>SEO audit results and recommendations do not guarantee specific ranking improvements. Search engine algorithms change frequently and results depend on many factors outside our control, including but not limited to: competitor activity, algorithm updates, content changes, and technical implementation quality.</p>
-
-    <h2>Professional Advice</h2>
-    <p>The information provided in our audit reports is intended for informational and business improvement purposes. It does not constitute legal, financial, or professional advice. For regulated sectors (legal, financial, medical), always consult with qualified professionals in your jurisdiction.</p>
-
-    <h2>Third-Party Tools &amp; Data</h2>
-    <p>Our audits reference data from third-party tools (Google PageSpeed Insights, SSL Labs, SEOptimer, and others). While we make every effort to ensure accuracy, we cannot guarantee the accuracy of data produced by third-party tools.</p>
-
-    <h2>Statistics &amp; Claims</h2>
-    <p>Statistics cited on this website and in our content (e.g., SEO ROI figures, conversion rates) are sourced from publicly available research. Sources are credited where cited. Individual results will vary.</p>
-
-    <h2>External Links</h2>
-    <p>This website may contain links to external websites. Illucrum is not responsible for the content, privacy practices, or accuracy of external sites.</p>
-  </div>
-</main>
-<footer class="site-footer">
-  <div class="container">
-    <div class="footer-inner">
-      <div class="footer-brand">
-        <strong>Illucrum</strong>
-        <p>SEO audits, optimisation, and web builds for businesses serious about growth.</p>
-        <p>Austin, TX &middot; Serving businesses across Europe</p>
-        <a href="mailto:szymon.kokot@illucrum.com" class="footer-email">szymon.kokot@illucrum.com</a>
-      </div>
-      <div class="footer-col">
-        <h5>Services</h5>
-        <a href="/audits/seo-audit">Website SEO Audit</a>
-        <a href="/audits/saas-seo-audit">SaaS SEO Audit</a>
-        <a href="/audits/professional-services-seo-audit">Professional Services SEO Audit</a>
-        <a href="/pricing">Pricing</a>
-      </div>
-      <div class="footer-col">
-        <h5>Content</h5>
-        <a href="/about">About</a>
-        <a href="/faq">FAQ</a>
-        <a href="/seo-facts">SEO Facts</a>
-      </div>
-      <div class="footer-col">
-        <h5>Contact</h5>
-        <a href="https://wa.me/48515983261" target="_blank" rel="noopener">WhatsApp</a>
-        <a href="https://t.me/m/w209xo-FZGJk" target="_blank" rel="noopener">Telegram</a>
-        <a href="https://linkedin.com/company/illucrum" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="https://clutch.co/profile/illucrum" target="_blank" rel="noopener">Clutch</a>
-      </div>
-      <div class="footer-col">
-        <h5>Legal</h5>
-        <a href="/legal/terms">Terms of Service</a>
-        <a href="/legal/privacy">Privacy Policy</a>
-        <a href="/legal/disclaimer">Disclaimer</a>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <span>&copy; 2026 Illucrum. All rights reserved.</span>
-    </div>
-  </div>
-</footer>
-<script>
-(function(){
-  // Theme
-  const t=document.getElementById('themeToggle');
-  const saved=localStorage.getItem('theme');
-  if(saved)document.documentElement.setAttribute('data-theme',saved);
-  t.addEventListener('click',()=>{
-    const current=document.documentElement.getAttribute('data-theme');
-    const next=current==='dark'?'light':'dark';
-    document.documentElement.setAttribute('data-theme',next);
-    localStorage.setItem('theme',next);
-  });
-  // Hamburger
-  const h=document.getElementById('hamburger');
-  const n=document.getElementById('navLinks');
-  h.addEventListener('click',()=>n.classList.toggle('open'));
-  // Mobile dropdown
-  document.querySelectorAll('.nav-dropdown > a').forEach(a=>{
-    a.addEventListener('click',e=>{
-      if(window.innerWidth<=768){
-        e.preventDefault();
-        a.parentElement.classList.toggle('open');
-      }
-    });
-  });
-  // Scroll reveal
-  const ro=new IntersectionObserver(entries=>{
-    entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');ro.unobserve(e.target);}});
-  },{threshold:0.1});
-  document.querySelectorAll('.reveal').forEach(el=>ro.observe(el));
-  // FAQ accordion
-  document.querySelectorAll('.faq-question').forEach(btn=>{
-    btn.addEventListener('click',()=>{
-      btn.parentElement.classList.toggle('open');
-    });
-  });
-})();
-</script>
+  </footer>
+  <script>
+    (function () {
+      // Theme
+      const t = document.getElementById('themeToggle');
+      const saved = localStorage.getItem('theme');
+      if (saved) document.documentElement.setAttribute('data-theme', saved);
+      t.addEventListener('click', () => {
+        const current = document.documentElement.getAttribute('data-theme');
+        const next = current === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', next);
+        localStorage.setItem('theme', next);
+      });
+      // Hamburger
+      const h = document.getElementById('hamburger');
+      const n = document.getElementById('navLinks');
+      h.addEventListener('click', () => n.classList.toggle('open'));
+      // Mobile dropdown
+      document.querySelectorAll('.nav-dropdown > a').forEach(a => {
+        a.addEventListener('click', e => {
+          if (window.innerWidth <= 768) {
+            e.preventDefault();
+            a.parentElement.classList.toggle('open');
+          }
+        });
+      });
+      // Scroll reveal
+      const ro = new IntersectionObserver(entries => {
+        entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); ro.unobserve(e.target); } });
+      }, { threshold: 0.1 });
+      document.querySelectorAll('.reveal').forEach(el => ro.observe(el));
+      // FAQ accordion
+      document.querySelectorAll('.faq-question').forEach(btn => {
+        btn.addEventListener('click', () => {
+          btn.parentElement.classList.toggle('open');
+        });
+      });
+    })();
+  </script>
 </body>
+
 </html>
