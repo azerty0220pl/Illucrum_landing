@@ -1,656 +1,334 @@
-<!doctype html>
-<html lang="en" data-theme="dark">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Illucrum - SEO audits, website optimization, and full web builds for growing businesses. We don't just find problems. We fix them."
-    />
-    <meta name="robots" content="index, follow" />
-    <meta name="theme-color" content="#0a0a0a" />
-    <meta property="og:title" content="Illucrum - SEO & Web Growth" />
-    <meta
-      property="og:description"
-      content="Start with an audit. End with a better website. Illucrum helps SMEs grow through strategic SEO and web development."
-    />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://illucrum.com" />
-    <meta property="og:image" content="./images/og-image.png" />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Illucrum - SEO & Web Growth" />
-    <meta
-      name="twitter:description"
-      content="Start with an audit. End with a better website."
-    />
-    <title>Illucrum - SEO Audits &amp; Web Growth</title>
-    <link rel="canonical" href="https://illucrum.com/" />
-    <link rel="stylesheet" href="./styles.css" />
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "ProfessionalService",
-        "name": "Illucrum LLC",
-        "url": "https://illucrum.com",
-        "email": "szymon.kokot@illucrum.com",
-        "description": "SEO audits, optimization, and web builds for growing businesses.",
-        "serviceType": ["SEO Audit", "Website Optimization", "Web Development"]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#f5f5f0">
+  <title>Professional SEO Audit Service for SMEs | Illucrum</title>
+  <meta name="description" content="46-point SEO audits with a clear, actionable report. Specialised audits for SaaS, professional services, and general websites. Serving businesses across Europe. Illucrum.">
+  <link rel="canonical" href="https://illucrum.com/">
+  <meta property="og:title" content="Professional SEO Audit Service for SMEs | Illucrum">
+  <meta property="og:description" content="Start with an audit. End with a better website. 46-point SEO analysis, prioritised action plan, and expert implementation for growing businesses.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://illucrum.com/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Professional SEO Audit Service for SMEs | Illucrum">
+  <meta name="twitter:description" content="Start with an audit. End with a better website. 46-point SEO analysis, prioritised action plan, and expert implementation for growing businesses.">
+  <link rel="icon" href="./images/logo-ico.png">
+  <link rel="stylesheet" href="./styles.css">
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "What is included in an SEO audit?", "acceptedAnswer": {"@type": "Answer", "text": "A professional SEO audit covers technical health (page speed, crawlability, HTTPS, mobile), on-page elements (title tags, meta descriptions, headings, content quality), keyword strategy, backlink profile, competitor analysis, and user experience. Illucrum's audits use a 46-point structured checklist with severity scoring and a prioritised action plan."}},
+    {"@type": "Question", "name": "How long does an SEO audit take?", "acceptedAnswer": {"@type": "Answer", "text": "Basic audits are delivered in 3–5 business days. Full audits, which include additional sections like competitor deep-dives and specialist analysis, take 5–8 business days. Each report includes a debrief session."}},
+    {"@type": "Question", "name": "How much does an SEO audit cost?", "acceptedAnswer": {"@type": "Answer", "text": "Illucrum's audits range from €247 to €797 depending on the audit type and tier. A generic Basic audit starts at €297. Specialised SaaS and Professional Services audits start at €347–€397. Full pricing details are on the pricing page at illucrum.com/pricing."}}
+  ]
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Illucrum",
+  "url": "https://illucrum.com",
+  "logo": "https://illucrum.com/images/logo.png",
+  "email": "szymon.kokot@illucrum.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "5900 Balcones Drive 21473",
+    "addressLocality": "Austin",
+    "addressRegion": "TX",
+    "postalCode": "78731-4257",
+    "addressCountry": "US"
+  },
+  "areaServed": {"@type": "Place", "name": "Europe"},
+  "contactPoint": [
+    {"@type": "ContactPoint", "contactType": "customer service", "url": "https://wa.me/48515983261", "description": "WhatsApp Business"},
+    {"@type": "ContactPoint", "contactType": "customer service", "url": "https://t.me/m/w209xo-FZGJk", "description": "Telegram Business"}
+  ],
+  "sameAs": ["https://linkedin.com/company/illucrum","https://clutch.co/profile/illucrum","https://www.linkedin.com/in/szymon-kokot/"]
+}</script>
+</head>
+<body>
+<nav class="main-nav">
+  <a href="/" class="nav-logo">
+    <img src="./images/logo.png" alt="Illucrum" class="logo-light">
+    <img src="./images/logo.png" alt="Illucrum" class="logo-dark">
+  </a>
+  <div class="nav-links" id="navLinks">
+    <div class="nav-dropdown">
+      <a href="/audits/seo-audit" tabindex="0">Audits</a>
+      <div class="dropdown-menu">
+        <a href="/audits/seo-audit">Website SEO Audit</a>
+        <a href="/audits/saas-seo-audit">SaaS SEO Audit</a>
+        <a href="/audits/professional-services-seo-audit">Professional Services SEO Audit</a>
+        <hr class="dropdown-divider">
+        <a href="/compare/basic-vs-full-seo-audit">Compare Audits</a>
+      </div>
+    </div>
+    <a href="/pricing">Pricing</a>
+    <a href="/about">About</a>
+    <a href="/faq">FAQ</a>
+    <a href="https://wa.me/48515983261?text=Hi%20Illucrum%2C%20I%27d%20like%20to%20discuss%20an%20SEO%20audit." class="nav-cta" target="_blank" rel="noopener">Get in Touch &rarr;</a>
+  </div>
+  <div class="nav-right">
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+      <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+      <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+    </button>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+    </button>
+  </div>
+</nav>
+<section class="hero">
+  <div class="hero-grid"></div>
+  <div class="hero-glow"></div>
+  <div class="container">
+    <div class="hero-content">
+      <div class="badge">SEO Audits for Growing Businesses</div>
+      <h1>SEO audits that tell you exactly what to fix and <span>why.</span></h1>
+      <p class="hero-sub">Most websites have problems hiding in plain sight. We find them, score them, and give you a prioritised action plan tied to real business outcomes. Whether it&rsquo;s optimising what you have or building something better from scratch, Illucrum turns insight into growth.</p>
+      <div class="hero-actions">
+        <a href="https://wa.me/48515983261?text=Hi%20Illucrum%2C%20I%27d%20like%20to%20discuss%20an%20SEO%20audit." class="btn-primary btn-whatsapp" target="_blank" rel="noopener">Chat with us on WhatsApp &rarr;</a>
+        <a href="#services" class="btn-ghost">See what we do</a>
+      </div>
+      <p class="hero-tertiary"><a href="https://t.me/m/w209xo-FZGJk" target="_blank" rel="noopener">Or message us on Telegram &rarr;</a></p>
+    </div>
+  </div>
+  <div class="scroll-hint"><span>Scroll</span><div class="scroll-line"></div></div>
+</section>
+
+<div class="container">
+  <div class="proof-bar reveal">
+    <div class="proof-item"><span class="proof-icon">&#10003;</span> 46-point audit</div>
+    <div class="proof-item"><span class="proof-icon">&#10003;</span> Report in 3&ndash;8 days</div>
+    <div class="proof-item"><span class="proof-icon">&#10003;</span> Serving businesses across Europe</div>
+  </div>
+</div>
+
+<section class="section" id="services">
+  <div class="container">
+    <div class="section-intro reveal">
+      <span class="section-label">What we do</span>
+      <h2>Start anywhere. Go further.</h2>
+      <p>An audit shows you exactly where you stand. But knowing the problem is just step one. We can help you fix it, optimise it, or rebuild entirely.</p>
+    </div>
+    <div class="services-grid">
+      <div class="card reveal">
+        <div class="card-icon">&#128269;</div>
+        <h3>SEO Audit</h3>
+        <p>A 46-point analysis of your site&rsquo;s technical health, on-page SEO, keyword strategy, and competitive position. You get a scored report with a clear action plan, not a data dump.</p>
+        <a href="/audits/seo-audit" class="card-link">See audit options &rarr;</a>
+      </div>
+      <div class="card reveal">
+        <div class="card-icon">&#9881;</div>
+        <h3>Optimisation</h3>
+        <p>We implement what the audit uncovers. Technical fixes, on-page improvements, page speed, structured data... handled end to end so you don&rsquo;t need a second agency.</p>
+        <a href="https://wa.me/48515983261?text=Hi%2C%20I%27m%20interested%20in%20SEO%20optimisation%20services." class="card-link" target="_blank" rel="noopener">Learn more &rarr;</a>
+      </div>
+      <div class="card reveal">
+        <div class="card-icon">&#128187;</div>
+        <h3>Web Design &amp; Build</h3>
+        <p>Sometimes the most honest recommendation is a fresh start. We build fast, SEO-ready websites designed around your customers and conversion goals.</p>
+        <a href="https://wa.me/48515983261?text=Hi%2C%20I%27m%20interested%20in%20a%20web%20build%20quote." class="card-link" target="_blank" rel="noopener">Get a web build quote &rarr;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-intro reveal">
+      <span class="section-label">Specialised audits</span>
+      <h2>Not every website needs the same audit.</h2>
+      <p>A SaaS company and a law firm face completely different SEO challenges. We built three audit types, each focused on the ranking factors that actually move the needle for your business.</p>
+    </div>
+    <div class="services-grid">
+      <div class="card reveal">
+        <h3>Website SEO Audit</h3>
+        <p class="card-tag">The complete picture.</p>
+        <p>46-point audit covering technical SEO, on-page elements, keywords, backlinks, competitor analysis, and UX. Ideal if you&rsquo;ve never had an audit or want a broad diagnostic before going deeper.</p>
+        <a href="/audits/seo-audit" class="card-link">See what&rsquo;s included &rarr;</a>
+      </div>
+      <div class="card reveal">
+        <h3>SaaS SEO Audit</h3>
+        <p class="card-tag">Audit the funnel, not just the site.</p>
+        <p>Built for software companies. Trial page SEO, funnel-stage keyword mapping, comparison page strategy, and G2/Capterra profile analysis. Because traffic without signups is just vanity.</p>
+        <a href="/audits/saas-seo-audit" class="card-link">See what&rsquo;s included &rarr;</a>
+      </div>
+      <div class="card reveal">
+        <h3>Professional Services SEO Audit</h3>
+        <p class="card-tag">Your site needs to prove expertise. We audit whether it does.</p>
+        <p>Designed for law firms, accountants, financial advisers, and consultants. Deep E-E-A-T and YMYL assessment, credential visibility, and trust signal analysis.</p>
+        <a href="/audits/professional-services-seo-audit" class="card-link">See what&rsquo;s included &rarr;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-intro reveal">
+      <span class="section-label">Why Illucrum</span>
+      <h2>We don&rsquo;t sell spreadsheets.</h2>
+      <p>Anyone can generate a report. We focus on what the data means for your business and what you should actually do about it.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-item reveal"><div class="why-dot"></div><div><h4>ROI-first thinking</h4><p>Every recommendation is framed around business impact, not just ranking positions. We tell you what to fix first and why it matters to your bottom line.</p></div></div>
+      <div class="why-item reveal"><div class="why-dot"></div><div><h4>No jargon, no gatekeeping</h4><p>You&rsquo;ll understand what we found, why it matters, and what to do about it. Our reports are written for business owners, not other SEO consultants.</p></div></div>
+      <div class="why-item reveal"><div class="why-dot"></div><div><h4>Audit + execution in one place</h4><p>From discovery to full web build, no handoff friction, no &ldquo;figure it out yourself.&rdquo; We can implement everything we recommend.</p></div></div>
+      <div class="why-item reveal"><div class="why-dot"></div><div><h4>Built for SMEs</h4><p>We understand growth constraints. Our recommendations are realistic, prioritised, and designed for businesses that need to make every euro count.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-intro reveal">
+      <span class="section-label">How it works</span>
+      <h2>From audit to action in three steps.</h2>
+    </div>
+    <div class="process-list">
+      <div class="process-step reveal">
+        <div class="step-number">01</div>
+        <div class="step-content"><h3>Tell us about your business</h3><p>Message us on WhatsApp or Telegram with your website URL and a brief description of your goals. We&rsquo;ll recommend the right audit type and tier. No obligation, no sales pitch.</p></div>
+      </div>
+      <div class="process-step reveal">
+        <div class="step-number">02</div>
+        <div class="step-content"><h3>We audit your site</h3><p>We run a 46-point structured analysis combining automated data with expert review. Every check is scored and every finding is explained in plain language.</p></div>
+      </div>
+      <div class="process-step reveal">
+        <div class="step-number">03</div>
+        <div class="step-content"><h3>You get a clear action plan</h3><p>Your report lands in 3&ndash;8 business days with prioritised recommendations, severity scores, and a debrief session to walk through the findings; via chat, call, or video, whatever works best for you. From there, we can implement the fixes or hand you the roadmap, your call.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container reveal">
+    <h2>The numbers behind why SEO matters.</h2>
+    <div class="stats">
+      <div class="stat"><div class="stat-number">53%</div><div class="stat-label">of all trackable website traffic comes from organic search</div><div class="stat-source">BrightEdge</div></div>
+      <div class="stat"><div class="stat-number">14.6%</div><div class="stat-label">close rate for SEO leads, vs 1.7% for outbound</div><div class="stat-source">Intergrowth</div></div>
+      <div class="stat"><div class="stat-number">400%</div><div class="stat-label">average ROI for SMEs investing in SEO within two years</div><div class="stat-source">PageOptimizer Pro</div></div>
+    </div>
+    <p class="text-center">These numbers describe an opportunity. An SEO audit tells you how much of it your site is capturing.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="reveal">Common questions</h2>
+    <div class="faq-group mt-3 reveal">
+      <div class="faq-item">
+  <button class="faq-question"><span>What is included in an SEO audit?</span><span class="faq-icon">+</span></button>
+  <div class="faq-answer"><p>A professional SEO audit covers technical health (page speed, crawlability, HTTPS, mobile), on-page elements (title tags, meta descriptions, headings, content quality), keyword strategy, backlink profile, competitor analysis, and user experience. Illucrum&rsquo;s audits use a 46-point structured checklist with severity scoring and a prioritised action plan.</p></div>
+</div>
+      <div class="faq-item">
+  <button class="faq-question"><span>How long does an SEO audit take?</span><span class="faq-icon">+</span></button>
+  <div class="faq-answer"><p>Basic audits are delivered in 3&ndash;5 business days. Full audits, which include additional sections like competitor deep-dives and specialist analysis, take 5&ndash;8 business days. Each report includes a debrief session.</p></div>
+</div>
+      <div class="faq-item">
+  <button class="faq-question"><span>How much does an SEO audit cost?</span><span class="faq-icon">+</span></button>
+  <div class="faq-answer"><p>Illucrum&rsquo;s audits range from &euro;247 to &euro;797 depending on the audit type and tier. A generic Basic audit starts at &euro;297. Specialised SaaS and Professional Services audits start at &euro;347&ndash;&euro;397. Full pricing details are on our <a href="/pricing">pricing page</a>.</p></div>
+</div>
+    </div>
+    <p class="text-center"><a href="/faq">See all FAQs &rarr;</a></p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="cta-band reveal">
+      <h2>Ready to see what&rsquo;s holding you back?</h2>
+      <p>Message us; no commitment, no boilerplate proposal. Just a real conversation about where your website stands and where it could go.</p>
+      <div class="cta-actions">
+        <a href="https://wa.me/48515983261?text=Hi%20Illucrum%2C%20I%27d%20like%20to%20discuss%20an%20SEO%20audit." class="btn-primary" target="_blank" rel="noopener">Chat on WhatsApp &rarr;</a>
+      </div>
+      <p class="cta-email"><a href="https://t.me/m/w209xo-FZGJk" target="_blank" rel="noopener">Or message us on Telegram &rarr;</a></p>
+    </div>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <strong>Illucrum</strong>
+        <p>SEO audits, optimisation, and web builds for businesses serious about growth.</p>
+        <p>Austin, TX &middot; Serving businesses across Europe</p>
+        <a href="mailto:szymon.kokot@illucrum.com" class="footer-email">szymon.kokot@illucrum.com</a>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <a href="/audits/seo-audit">Website SEO Audit</a>
+        <a href="/audits/saas-seo-audit">SaaS SEO Audit</a>
+        <a href="/audits/professional-services-seo-audit">Professional Services SEO Audit</a>
+        <a href="/pricing">Pricing</a>
+      </div>
+      <div class="footer-col">
+        <h5>Content</h5>
+        <a href="/about">About</a>
+        <a href="/faq">FAQ</a>
+        <a href="/seo-facts">SEO Facts</a>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <a href="https://wa.me/48515983261" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="https://t.me/m/w209xo-FZGJk" target="_blank" rel="noopener">Telegram</a>
+        <a href="https://linkedin.com/company/illucrum" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://clutch.co/profile/illucrum" target="_blank" rel="noopener">Clutch</a>
+      </div>
+      <div class="footer-col">
+        <h5>Legal</h5>
+        <a href="/legal/terms">Terms of Service</a>
+        <a href="/legal/privacy">Privacy Policy</a>
+        <a href="/legal/disclaimer">Disclaimer</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Illucrum. All rights reserved.</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  // Theme
+  const t=document.getElementById('themeToggle');
+  const saved=localStorage.getItem('theme');
+  if(saved)document.documentElement.setAttribute('data-theme',saved);
+  t.addEventListener('click',()=>{
+    const current=document.documentElement.getAttribute('data-theme');
+    const next=current==='dark'?'light':'dark';
+    document.documentElement.setAttribute('data-theme',next);
+    localStorage.setItem('theme',next);
+  });
+  // Hamburger
+  const h=document.getElementById('hamburger');
+  const n=document.getElementById('navLinks');
+  h.addEventListener('click',()=>n.classList.toggle('open'));
+  // Mobile dropdown
+  document.querySelectorAll('.nav-dropdown > a').forEach(a=>{
+    a.addEventListener('click',e=>{
+      if(window.innerWidth<=768){
+        e.preventDefault();
+        a.parentElement.classList.toggle('open');
       }
-    </script>
-    <link rel="icon" href="./images/logo-ico.png" />
-  </head>
-  <body>
-    <!-- ═══ NAV ═══ -->
-    <nav class="main-nav" role="navigation" aria-label="Main navigation">
-      <a href="/" class="nav-logo" aria-label="Illucrum home">
-        <img
-          class="logo-dark"
-          src="./images/logo.png"
-          alt="Illucrum's logo"
-          width="26"
-          height="26"
-          aria-hidden="true"
-        />
-        <img
-          class="logo-light"
-          src="./images/logo.png"
-          alt="Illucrum's logo"
-          width="26"
-          height="26"
-          aria-hidden="true"
-        />
-        Illucrum
-      </a>
-
-      <div class="nav-links" id="navLinks">
-        <a href="#services">Services</a>
-        <a href="#process">Process</a>
-        <a href="#why">Why Us</a>
-        <a href="mailto:szymon.kokot@illucrum.com" class="nav-cta"
-          >Get in Touch</a
-        >
-      </div>
-
-      <div class="nav-right">
-        <button
-          class="theme-toggle"
-          id="themeToggle"
-          aria-label="Toggle light/dark theme"
-        >
-          <!-- Moon (shown in dark mode) -->
-          <svg
-            class="icon-moon"
-            width="16"
-            height="16"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
-          </svg>
-          <!-- Sun (shown in light mode) -->
-          <svg
-            class="icon-sun"
-            width="16"
-            height="16"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            <circle cx="12" cy="12" r="5" />
-            <line x1="12" y1="1" x2="12" y2="3" />
-            <line x1="12" y1="21" x2="12" y2="23" />
-            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
-            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
-            <line x1="1" y1="12" x2="3" y2="12" />
-            <line x1="21" y1="12" x2="23" y2="12" />
-            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
-            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
-          </svg>
-        </button>
-        <button
-          class="hamburger"
-          aria-label="Toggle menu"
-          aria-expanded="false"
-          aria-controls="navLinks"
-          onclick="toggleNav(this)"
-        >
-          <svg
-            width="22"
-            height="22"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-          >
-            <line x1="3" y1="6" x2="21" y2="6" />
-            <line x1="3" y1="12" x2="21" y2="12" />
-            <line x1="3" y1="18" x2="21" y2="18" />
-          </svg>
-        </button>
-      </div>
-    </nav>
-
-    <main>
-      <!-- ═══ HERO ═══ -->
-      <section class="hero" aria-labelledby="hero-heading">
-        <div class="hero-grid" aria-hidden="true"></div>
-        <div class="hero-glow" aria-hidden="true"></div>
-        <div class="container">
-          <div class="hero-content">
-            <div class="badge">SEO · Optimization · Web Build</div>
-            <h1 id="hero-heading">
-              Your website should<br />be <span>working harder.</span>
-            </h1>
-            <p class="hero-sub">
-              We start with a deep SEO audit - then we don't stop there. Whether
-              it's optimizing what you have or building something better from
-              scratch, Illucrum turns insight into growth.
-            </p>
-            <div class="hero-actions">
-              <a href="mailto:szymon.kokot@illucrum.com" class="btn-primary">
-                Start a free conversation
-                <svg
-                  width="16"
-                  height="16"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <path d="M5 12h14M12 5l7 7-7 7" />
-                </svg>
-              </a>
-              <a href="#services" class="btn-ghost">See what we do</a>
-            </div>
-          </div>
-        </div>
-        <div class="scroll-hint" aria-hidden="true">
-          <div class="scroll-line"></div>
-          scroll
-        </div>
-      </section>
-
-      <!-- ═══ STATS ═══ 
-      <div class="container">
-        <div class="stats reveal" role="list">
-          <div class="stat" role="listitem">
-            <div class="stat-number">46</div>
-            <div class="stat-label">Audit checkpoints</div>
-          </div>
-          <div class="stat" role="listitem">
-            <div class="stat-number">ROI</div>
-            <div class="stat-label">
-              Every recommendation tied to business impact
-            </div>
-          </div>
-          <div class="stat" role="listitem">
-            <div class="stat-number">0</div>
-            <div class="stat-label">Cookies. No tracking. Ever.</div>
-          </div>
-        </div>
-      </div>
-    -->
-      <!-- ═══ SERVICES ═══ -->
-      <section class="section" id="services" aria-labelledby="services-heading">
-        <div class="container">
-          <div class="section-intro reveal">
-            <span class="section-label">What we do</span>
-            <h2 id="services-heading">Start anywhere.<br />Go further.</h2>
-            <p>
-              An audit shows you exactly where you stand. But knowing the
-              problem is just step one - we help you fix it, optimize it, or
-              rebuild entirely.
-            </p>
-          </div>
-          <div class="services-grid">
-            <article class="card featured reveal">
-              <div class="card-icon" aria-hidden="true">
-                <svg
-                  width="22"
-                  height="22"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="#00c96b"
-                  stroke-width="1.8"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <circle cx="11" cy="11" r="8" />
-                  <line x1="21" y1="21" x2="16.65" y2="16.65" />
-                  <line x1="11" y1="8" x2="11" y2="14" />
-                  <line x1="8" y1="11" x2="14" y2="11" />
-                </svg>
-              </div>
-              <h3>SEO Audit</h3>
-              <p>
-                A 46-point deep-dive into your technical health, on-page
-                signals, keyword opportunities, backlinks, competitor gaps, and
-                UX. No fluff - just clarity and a clear action plan.
-              </p>
-            </article>
-
-            <article class="card reveal">
-              <div class="card-icon" aria-hidden="true">
-                <svg
-                  width="22"
-                  height="22"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="#00c96b"
-                  stroke-width="1.8"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <polyline points="23 6 13.5 15.5 8.5 10.5 1 18" />
-                  <polyline points="17 6 23 6 23 12" />
-                </svg>
-              </div>
-              <h3>SEO &amp; Performance Optimization</h3>
-              <p>
-                We implement what the audit uncovers. Technical fixes, on-page
-                improvements, page speed, structured data, and everything in
-                between - done for you.
-              </p>
-            </article>
-
-            <article class="card reveal">
-              <div class="card-icon" aria-hidden="true">
-                <svg
-                  width="22"
-                  height="22"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="#00c96b"
-                  stroke-width="1.8"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <rect x="3" y="3" width="18" height="18" rx="2" />
-                  <line x1="3" y1="9" x2="21" y2="9" />
-                  <line x1="9" y1="21" x2="9" y2="9" />
-                </svg>
-              </div>
-              <h3>Web Design &amp; Build</h3>
-              <p>
-                Sometimes the best fix is a fresh start. We design and build
-                fast, SEO-ready websites that convert visitors into customers -
-                built on a foundation Google rewards.
-              </p>
-            </article>
-
-            <article class="card reveal">
-              <div class="card-icon" aria-hidden="true">
-                <svg
-                  width="22"
-                  height="22"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="#00c96b"
-                  stroke-width="1.8"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <path
-                    d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
-                  />
-                </svg>
-              </div>
-              <h3>Strategic Consulting</h3>
-              <p>
-                We translate audit data into a prioritized roadmap you can
-                actually execute - with or without us continuing to help.
-              </p>
-            </article>
-
-            <article class="card reveal">
-              <div class="card-icon" aria-hidden="true">
-                <svg
-                  width="22"
-                  height="22"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="#00c96b"
-                  stroke-width="1.8"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <path d="M12 2L2 7l10 5 10-5-10-5z" />
-                  <path d="M2 17l10 5 10-5" />
-                  <path d="M2 12l10 5 10-5" />
-                </svg>
-              </div>
-              <h3>Local SEO</h3>
-              <p>
-                Google Business Profile, local citations, and map pack
-                visibility - the signals that put you in front of nearby
-                customers who are ready to buy.
-              </p>
-            </article>
-
-            <article class="card reveal">
-              <div class="card-icon" aria-hidden="true">
-                <svg
-                  width="22"
-                  height="22"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="#00c96b"
-                  stroke-width="1.8"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <circle cx="12" cy="12" r="10" />
-                  <polyline points="12 6 12 12 16 14" />
-                </svg>
-              </div>
-              <h3>Ongoing Oversight</h3>
-              <p>
-                Monthly strategy reviews, rank tracking, and continuous
-                improvement - so your results compound rather than stall.
-              </p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <hr class="divider" />
-
-      <!-- ═══ PROCESS ═══ -->
-      <section class="section" id="process" aria-labelledby="process-heading">
-        <div class="container">
-          <div class="section-intro reveal">
-            <span class="section-label">How it works</span>
-            <h2 id="process-heading">From audit<br />to action.</h2>
-            <p>
-              No mystery deliverables, no disappearing after the report. A clear
-              path from problem to solution.
-            </p>
-          </div>
-          <div class="process-list">
-            <div class="process-step reveal">
-              <div class="step-number" aria-hidden="true">01</div>
-              <div class="step-content">
-                <h3>Discovery Call</h3>
-                <p>
-                  A short conversation to understand your business, goals, and
-                  what's blocking growth. No pressure, no pitch.
-                </p>
-              </div>
-            </div>
-            <div class="process-step reveal">
-              <div class="step-number" aria-hidden="true">02</div>
-              <div class="step-content">
-                <h3>The Audit</h3>
-                <p>
-                  A structured 46-point analysis across technical SEO, on-page
-                  signals, keyword opportunities, backlinks, competitor gaps,
-                  local presence, and UX - delivered as a clear, prioritized
-                  report.
-                </p>
-              </div>
-            </div>
-            <div class="process-step reveal">
-              <div class="step-number" aria-hidden="true">03</div>
-              <div class="step-content">
-                <h3>Roadmap Debrief</h3>
-                <p>
-                  We walk through the findings together. You leave knowing
-                  exactly what to fix first, what's a quick win, and the 90-day
-                  path forward.
-                </p>
-              </div>
-            </div>
-            <div class="process-step reveal">
-              <div class="step-number" aria-hidden="true">04</div>
-              <div class="step-content">
-                <h3>Implementation (optional)</h3>
-                <p>
-                  Want us to execute? We handle everything from technical fixes
-                  to a full redesign. Or we hand you the roadmap - your call.
-                </p>
-              </div>
-            </div>
-            <div class="process-step reveal">
-              <div class="step-number" aria-hidden="true">05</div>
-              <div class="step-content">
-                <h3>Measure &amp; Iterate</h3>
-                <p>
-                  Rankings move when you act on good data consistently. We track
-                  what matters and adjust as the landscape evolves.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <hr class="divider" />
-
-      <!-- ═══ WHY ═══ -->
-      <section class="section" id="why" aria-labelledby="why-heading">
-        <div class="container">
-          <div class="section-intro reveal">
-            <span class="section-label">Why Illucrum</span>
-            <h2 id="why-heading">We don't sell<br />spreadsheets.</h2>
-            <p>
-              Anyone can generate a report. We focus on what the data means for
-              your business - and what you should actually do about it.
-            </p>
-          </div>
-          <div class="why-grid">
-            <div class="why-item reveal">
-              <div class="why-dot" aria-hidden="true"></div>
-              <div>
-                <h4>ROI-first thinking</h4>
-                <p>
-                  Every recommendation is framed around business impact - not
-                  just ranking positions.
-                </p>
-              </div>
-            </div>
-            <div class="why-item reveal">
-              <div class="why-dot" aria-hidden="true"></div>
-              <div>
-                <h4>No jargon, no gatekeeping</h4>
-                <p>
-                  You'll understand what we found, why it matters, and what to
-                  do about it.
-                </p>
-              </div>
-            </div>
-            <div class="why-item reveal">
-              <div class="why-dot" aria-hidden="true"></div>
-              <div>
-                <h4>Audit + execution in one place</h4>
-                <p>
-                  From discovery to full web build - no handoff friction, no
-                  "figure it out yourself."
-                </p>
-              </div>
-            </div>
-            <div class="why-item reveal">
-              <div class="why-dot" aria-hidden="true"></div>
-              <div>
-                <h4>Built for SMEs</h4>
-                <p>
-                  We understand growth constraints. Recommendations are
-                  realistic, not aspirational.
-                </p>
-              </div>
-            </div>
-            <div class="why-item reveal">
-              <div class="why-dot" aria-hidden="true"></div>
-              <div>
-                <h4>Zero cookies, full transparency</h4>
-                <p>
-                  We don't track you here - and we apply that same principle to
-                  how we advise clients.
-                </p>
-              </div>
-            </div>
-            <div class="why-item reveal">
-              <div class="why-dot" aria-hidden="true"></div>
-              <div>
-                <h4>Long-term partnership mindset</h4>
-                <p>
-                  We want your business to grow - because aligned incentives are
-                  the foundation of good work.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- ═══ CTA ═══ -->
-      <section class="section-sm" aria-labelledby="cta-heading">
-        <div class="container">
-          <div class="cta-band reveal">
-            <h2 id="cta-heading">Ready to see what's holding you back?</h2>
-            <p>
-              Send us a message - no commitment, no boilerplate proposal. Just a
-              real conversation about where your website stands and where it
-              could go.
-            </p>
-            <a href="mailto:szymon.kokot@illucrum.com" class="btn-primary">
-              Start the conversation
-              <svg
-                width="16"
-                height="16"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path d="M5 12h14M12 5l7 7-7 7" />
-              </svg>
-            </a>
-            <a href="mailto:szymon.kokot@illucrum.com" class="cta-email"
-              >szymon.kokot@illucrum.com</a
-            >
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <!-- ═══ FOOTER ═══ -->
-    <footer class="site-footer" role="contentinfo">
-      <div class="container">
-        <div class="footer-inner">
-          <div class="footer-brand">
-            <a href="/" class="nav-logo" aria-label="Illucrum home">
-              <img
-                class="logo-dark"
-                src="./images/logo.png"
-                alt="Illucrum's logo"
-                width="26"
-                height="26"
-                aria-hidden="true"
-              />
-              <img
-                class="logo-light"
-                src="./images/logo.png"
-                alt="Illucrum's logo"
-                width="26"
-                height="26"
-                aria-hidden="true"
-              />
-              Illucrum
-            </a>
-            <p>
-              SEO audits, optimization, and web builds for businesses serious
-              about growth.
-            </p>
-            <p style="margin-top: 0.6rem">
-              <a
-                href="mailto:szymon.kokot@illucrum.com"
-                style="color: var(--text-muted)"
-              >
-                szymon.kokot@illucrum.com
-              </a>
-            </p>
-          </div>
-          <div class="footer-col">
-            <h5>Services</h5>
-            <a href="#services">SEO Audit</a>
-            <a href="#services">Optimization</a>
-            <a href="#services">Web Build</a>
-            <a href="#services">Local SEO</a>
-          </div>
-          <div class="footer-col">
-            <h5>Legal</h5>
-            <a href="/terms">Terms of Service</a>
-            <a href="/privacy">Privacy Policy</a>
-            <a href="/disclaimer">Disclaimer</a>
-          </div>
-        </div>
-        <div class="footer-bottom">
-          <span
-            >© <span id="year"></span> Illucrum LLC. All rights reserved.</span
-          >
-          <span>No cookies. No tracking.</span>
-        </div>
-      </div>
-    </footer>
-
-    <script>
-      // Year
-      document.getElementById("year").textContent = new Date().getFullYear();
-
-      // Mobile nav toggle
-      function toggleNav(btn) {
-        const nav = document.getElementById("navLinks");
-        const isOpen = nav.classList.toggle("open");
-        btn.setAttribute("aria-expanded", isOpen);
-      }
-      document.querySelectorAll("#navLinks a").forEach((a) => {
-        a.addEventListener("click", () => {
-          document.getElementById("navLinks").classList.remove("open");
-        });
-      });
-
-      // Theme toggle - persist preference
-      const html = document.documentElement;
-      const btn = document.getElementById("themeToggle");
-      const saved = localStorage.getItem("illucrum-theme");
-      if (saved) html.setAttribute("data-theme", saved);
-
-      btn.addEventListener("click", () => {
-        const current = html.getAttribute("data-theme");
-        const next = current === "dark" ? "light" : "dark";
-        html.setAttribute("data-theme", next);
-        try {
-          localStorage.setItem("illucrum-theme", next);
-        } catch (e) {}
-      });
-
-      // Scroll reveal
-      const observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((e) => {
-            if (e.isIntersecting) {
-              e.target.classList.add("visible");
-              observer.unobserve(e.target);
-            }
-          });
-        },
-        { threshold: 0.07 },
-      );
-      document
-        .querySelectorAll(".reveal")
-        .forEach((el) => observer.observe(el));
-    </script>
-  </body>
+    });
+  });
+  // Scroll reveal
+  const ro=new IntersectionObserver(entries=>{
+    entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');ro.unobserve(e.target);}});
+  },{threshold:0.1});
+  document.querySelectorAll('.reveal').forEach(el=>ro.observe(el));
+  // FAQ accordion
+  document.querySelectorAll('.faq-question').forEach(btn=>{
+    btn.addEventListener('click',()=>{
+      btn.parentElement.classList.toggle('open');
+    });
+  });
+})();
+</script>
+</body>
 </html>
