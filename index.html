@@ -119,6 +119,25 @@
   ]
   }
   </script>
+  <!-- Consent Mode v2 defaults (must load before GTM) -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    (function () {
+      var c = null;
+      try { c = localStorage.getItem('illu_consent'); } catch (e) { }
+      var g = c === 'granted' ? 'granted' : 'denied';
+      gtag('consent', 'default', {
+        ad_storage: g,
+        analytics_storage: g,
+        ad_user_data: g,
+        ad_personalization: g,
+        functionality_storage: 'granted',
+        security_storage: 'granted',
+        wait_for_update: 500
+      });
+    })();
+  </script>
   <!-- Google Tag Manager -->
   <script>(function (w, d, s, l, i) {
       w[l] = w[l] || []; w[l].push({
