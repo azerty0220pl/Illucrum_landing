@@ -28,6 +28,27 @@
       btn.parentElement.classList.toggle('open');
     });
   });
+  // Contact click tracking (WhatsApp + Telegram) -> GTM dataLayer
+  document.addEventListener('click', function (ev) {
+    const link = ev.target.closest && ev.target.closest('a[href]');
+    if (!link) return;
+    const href = link.getAttribute('href') || '';
+    let method = '';
+    if (/^https?:\/\/(?:[a-z0-9-]+\.)*wa\.me\//i.test(href) || /^https?:\/\/(?:[a-z0-9-]+\.)*whatsapp\.com\//i.test(href)) {
+      method = 'whatsapp';
+    } else if (/^https?:\/\/(?:[a-z0-9-]+\.)*t\.me\//i.test(href) || /^https?:\/\/(?:[a-z0-9-]+\.)*telegram\.(?:me|org)\//i.test(href)) {
+      method = 'telegram';
+    }
+    if (!method) return;
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      event: 'contact_click',
+      contact_method: method,
+      link_url: link.href,
+      link_text: (link.textContent || '').trim().slice(0, 120),
+      page_location: window.location.href
+    });
+  });
 })();
 
 // Cookie consent (Google Consent Mode v2)
