@@ -1240,7 +1240,7 @@ footer.site-footer {
   transform: translate(-50%, 0);
 }
 .cookie-banner p {
-  flex: 1 1 280px;
+  flex: 1;
   margin: 0;
   color: var(--text-muted);
   line-height: 1.5;
