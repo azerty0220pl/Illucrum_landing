@@ -9,13 +9,19 @@
     <url>
         <loc>https://illucrum.com/audits/ecommerce-seo-audit</loc>
         <priority>0.9</priority>
-        <lastmod>2026-03-28</lastmod>
+        <lastmod>2026-04-30</lastmod>
         <changefreq>monthly</changefreq>
     </url>
     <url>
         <loc>https://illucrum.com/audits/seo-audit</loc>
         <priority>0.6</priority>
-        <lastmod>2026-03-28</lastmod>
+        <lastmod>2026-04-30</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>https://illucrum.com/audits/saas-seo-audit</loc>
+        <priority>0.6</priority>
+        <lastmod>2026-04-30</lastmod>
         <changefreq>monthly</changefreq>
     </url>
     <url>
