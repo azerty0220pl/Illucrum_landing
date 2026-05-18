@@ -486,31 +486,79 @@ nav.main-nav {
   padding: 0.6rem 1.2rem;
 }
 
-/* WhatsApp branded button */
-.btn-whatsapp {
-  background: #25D366;
-  color: #fff;
-}
-.btn-whatsapp:hover {
-  background: #1da851;
-  color: #fff;
-  box-shadow: 0 8px 24px rgba(37, 211, 102, 0.25);
+/* Email / WhatsApp paired buttons.
+   Inside .hero-actions / .cta-actions, the .btn-mail and .btn-whatsapp buttons
+   swap primary (green) and secondary (white) roles based on viewport.
+   Desktop: mail is primary (green) on the left, WhatsApp is secondary (white) on the right.
+   Mobile (≤768px): WhatsApp is primary (green) on top, mail is secondary (white) below. */
+
+.cta-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
 }
 
-/* Mail marker class — uses .btn-primary styling, no override needed.
-   Desktop: mail first (main), WhatsApp second (secondary).
-   Mobile (≤768px): WhatsApp first (primary). */
+/* ── Desktop default: mail = primary green, WhatsApp = secondary white ── */
 .hero-actions .btn-mail,
-.cta-actions .btn-mail { order: 1; }
+.cta-actions .btn-mail {
+  order: 1;
+  background: var(--green);
+  color: #000;
+  border: none;
+}
+.hero-actions .btn-mail:hover,
+.cta-actions .btn-mail:hover {
+  background: var(--green-dim);
+  color: #000;
+  box-shadow: 0 8px 24px rgba(0, 201, 107, 0.25);
+}
 .hero-actions .btn-whatsapp,
-.cta-actions .btn-whatsapp { order: 2; }
+.cta-actions .btn-whatsapp {
+  order: 2;
+  background: var(--surface);
+  color: var(--text);
+  border: 1px solid var(--border);
+}
+.hero-actions .btn-whatsapp:hover,
+.cta-actions .btn-whatsapp:hover {
+  background: var(--surface2);
+  color: var(--text);
+  border-color: rgba(0, 201, 107, 0.4);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
 .hero-actions .btn-ghost { order: 3; }
 
 @media (max-width: 768px) {
+  /* ── Mobile: WhatsApp = primary green, mail = secondary white ── */
   .hero-actions .btn-mail,
-  .cta-actions .btn-mail { order: 2; }
+  .cta-actions .btn-mail {
+    order: 2;
+    background: var(--surface);
+    color: var(--text);
+    border: 1px solid var(--border);
+  }
+  .hero-actions .btn-mail:hover,
+  .cta-actions .btn-mail:hover {
+    background: var(--surface2);
+    color: var(--text);
+    border-color: rgba(0, 201, 107, 0.4);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  }
   .hero-actions .btn-whatsapp,
-  .cta-actions .btn-whatsapp { order: 1; }
+  .cta-actions .btn-whatsapp {
+    order: 1;
+    background: var(--green);
+    color: #000;
+    border: none;
+  }
+  .hero-actions .btn-whatsapp:hover,
+  .cta-actions .btn-whatsapp:hover {
+    background: var(--green-dim);
+    color: #000;
+    border: none;
+    box-shadow: 0 8px 24px rgba(0, 201, 107, 0.25);
+  }
   .hero-actions .btn-ghost { order: 3; }
 }
 
