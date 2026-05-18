@@ -497,6 +497,23 @@ nav.main-nav {
   box-shadow: 0 8px 24px rgba(37, 211, 102, 0.25);
 }
 
+/* Mail marker class — uses .btn-primary styling, no override needed.
+   Desktop: mail first (main), WhatsApp second (secondary).
+   Mobile (≤768px): WhatsApp first (primary). */
+.hero-actions .btn-mail,
+.cta-actions .btn-mail { order: 1; }
+.hero-actions .btn-whatsapp,
+.cta-actions .btn-whatsapp { order: 2; }
+.hero-actions .btn-ghost { order: 3; }
+
+@media (max-width: 768px) {
+  .hero-actions .btn-mail,
+  .cta-actions .btn-mail { order: 2; }
+  .hero-actions .btn-whatsapp,
+  .cta-actions .btn-whatsapp { order: 1; }
+  .hero-actions .btn-ghost { order: 3; }
+}
+
 /* ════════════════════════════════
    PROOF BAR
    ════════════════════════════════ */

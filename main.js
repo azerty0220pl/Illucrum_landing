@@ -28,7 +28,7 @@
       btn.parentElement.classList.toggle('open');
     });
   });
-  // Contact click tracking (WhatsApp + Telegram) -> GTM dataLayer
+  // Contact click tracking (WhatsApp + Email) -> GTM dataLayer
   document.addEventListener('click', function (ev) {
     const link = ev.target.closest && ev.target.closest('a[href]');
     if (!link) return;
@@ -36,8 +36,8 @@
     let method = '';
     if (/^https?:\/\/(?:[a-z0-9-]+\.)*wa\.me\//i.test(href) || /^https?:\/\/(?:[a-z0-9-]+\.)*whatsapp\.com\//i.test(href)) {
       method = 'whatsapp';
-    } else if (/^https?:\/\/(?:[a-z0-9-]+\.)*t\.me\//i.test(href) || /^https?:\/\/(?:[a-z0-9-]+\.)*telegram\.(?:me|org)\//i.test(href)) {
-      method = 'telegram';
+    } else if (/^mailto:/i.test(href)) {
+      method = 'email';
     }
     if (!method) return;
     window.dataLayer = window.dataLayer || [];
